@@ -1,0 +1,441 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    box-sizing: border-box;
+}
+
+.police{
+    font-family: 'EB Garamond' !important;
+    color: black !important;
+}
+
+#Lisa0 span, #Lisa0 td{
+    font-family: 'Dancing Script';
+    color: blue;
+}
+
+
+#Vert1 span, #Vert1 td{
+    font-family: 'Dancing Script';
+    color: green;
+}
+
+#Braham2 span, #Braham2 td{
+    font-family: 'Cardo';
+    color: red
+}
+#Braham2 .info_left, #Braham2 .info_right{
+    width: 26%;
+}
+#Braham2 .bordure_pv{
+    left: 33.5%;
+}
+#Braham2 .bordure_pe{
+    right: 33.5%;
+}
+#Braham2 .ss_stats_right .police, #Braham2 .info_right{
+    text-align: end;
+}
+
+#Bjorn3 span,#Bjorn3 td{
+    font-family: 'Caveat';
+    color : brown
+}
+
+#Gregor4 span,#Gregor4 td{  
+    font-family: 'Josefin Sans';
+    color : gray
+}
+#Gregor4 .info_right{
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #161414e0;
+    border-bottom: 2px solid gray;
+}
+
+#logo{
+    width: 10%;
+}
+
+#titre{
+    padding-top: 3%;
+    font-size: 300%;
+    color: white;
+}
+
+main{
+    background-color: #f0e3c0;
+    padding: 5%;
+}
+
+#conteneur_fiches{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fiche{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    background: #898989;
+    border-radius: 15px;
+    width: 250px;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.perso{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 580px;
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.fiche:hover{
+    background-color: #ab8163;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fiche:hover .perso{
+    filter: none;
+}
+
+.nom_perso{
+    font-size: 25px;
+    color: white;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+.modal_fiche {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+    z-index: 2;
+}
+
+.modal_fiche p{
+    font-family: 'EB Garamond';
+}
+
+.modal_fiche:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.fiche_content {
+    border-radius: 4px;
+    position: relative;
+    width: 80%;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+    z-index: 2;
+    background-image: url(../images/fantaisie/Fond.jpg);
+    background-size: cover;
+}
+
+.fiche_content h1, h2, p{
+    z-index: 2;
+    position: relative;
+}
+
+.fond_perso{
+    width: 1522px;
+    height: 971px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    border-radius: 15px;
+    object-fit: cover;
+    top: 0;
+}
+  
+.modal_close {
+    position: absolute;
+    top: 10px;
+    right: 9.2%;
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    background-color: gray;
+    padding: 1px;
+    width: 15px;
+}
+
+footer{
+    background-color: #161414e0;
+    border-top: 2px solid gray;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+#return{
+    padding: 2% 0 2% 2%;
+    color: white;
+    font-size: 21px;
+    z-index: 0;
+}
+
+
+/*Modal*/
+.scroll_page{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -8.8%;
+    top: 5%;
+    z-index: -1;
+}
+
+.scroll_page_competence{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 3.7%;
+    top: 17%;
+    z-index: -1;
+}
+
+.scroll_page_bagage{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 3.5%;
+    top: 25%;
+    z-index: -1;
+}
+
+.chapitres_competence, .chapitres_bagage{
+    padding: 1%;
+    width: 0%;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-right: 25px;
+    padding-left: 10px;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 1s;
+}
+
+
+.rouleau{
+    object-fit: cover;
+    width: 100px;
+    margin-left: -85px;
+    z-index: 2;
+    clip-path: inset(0 0 0 73px);
+}
+
+.chapitres_competence:hover, .chapitres_bagage:hover{
+    width: 100%;
+}
+
+.rouleau_competence{
+    display: flex;
+}
+.chapitres_competence{
+    background-image: url(../images/fantaisie/assets/page_bleu.png);
+}
+
+.chapitres_bagage{
+    background-image: url(../images/fantaisie/assets/page_rouge.png);
+}
+
+.info_container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+}
+
+.pv, .pe{
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pv{
+    color: red;
+}
+
+.pe{
+    color: rgb(0, 89, 255);
+}
+.bordure_pv{
+    position: absolute;
+    width: 5%;
+    left: 30.5%;
+    top : 6.5%;
+    opacity: 0.7;
+}
+
+.bordure_pe{
+    position: absolute;
+    width: 5%;
+    right: 30.5%;
+    top : 6.5%;
+    opacity: 0.7;
+}
+
+.info_right, .info_left{
+    width: 20%;
+    background-color: rgba(215, 215, 215, 0.35);
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.illustration{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 1px 5px 9px 2px rgba(0,0,0,0.2);
+}
+.stats{
+    display: flex;
+    justify-content: center;
+}
+.Ouais{
+    display: flex;
+    justify-content: space-around;
+}
+.res, .maitrise{
+    display : flex;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-bottom: 1%;
+}
+
+.maitrise{
+    position: absolute;
+    top: 40%;
+}
+
+.res td, .maitrise td{
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(215, 215, 215, 0.35);
+    box-shadow: inset 1px 5px 9px 2px rgba(0,0,0,0.2);
+}
+
+.gds_stats{
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-bottom: 1%;
+    box-shadow: inset 1px 5px 9px 2px rgba(0,0,0,0.2);
+}
+
+.gds_stats td{
+    padding: 10px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.gds_sous_stats{
+    display: flex;
+    justify-content: space-around;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.gds_sous_stats td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.ss_stats{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.ss_stats_left, .ss_stats_right{
+    background-color: rgb(215 215 215 / 35%);
+    border-radius: 15px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.ss_stats td{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+
+.contexte{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.Catégorie_Tableau, .Catégorie_Tableau_bagage, .Catégorie_Tableau_devise{
+    display: flex;
+    justify-content: center;
+}
+
+.Catégorie_Tableau_bagage{
+    width: 65%
+}
+
+.tableau-arme, .tableau-armure, .tableau-trait, .tableau-competence, .tableau-objet, .tableau-argent{
+    display: flex;
+    justify-content: center;
+}
+
+.tableau-arme td, .tableau-armure td, .tableau-trait td, .tableau-competence td, .tableau-objet td, .tableau-argent td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.tableau-objet{
+    width: 65%;
+}
+
+.tableau-argent{
+    width: -1%;
+}
+
+.conteneur_objet_argent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur_monnaie{
+    margin: auto;
+}
