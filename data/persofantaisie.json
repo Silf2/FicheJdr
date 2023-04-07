@@ -204,7 +204,7 @@
             { "name" : "discretion", "value" : 0},
             { "name" : "observation", "value" : -10},
             { "name" : "perception", "value" : 10},
-            { "name" : "psyche", "value" : 10},
+            { "name" : "psyche", "value" : 0},
             { "name" : "intimidation", "value" : 0},
             { "name" : "communication", "value" : 0},
             { "name" : "autorite", "value" : 0},
