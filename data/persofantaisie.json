@@ -203,7 +203,7 @@
             { "name" : "parade", "value" : 0},
             { "name" : "discretion", "value" : 0},
             { "name" : "observation", "value" : 0},
-            { "name" : "perception", "value" : -10},
+            { "name" : "perception", "value" : 10},
             { "name" : "psyche", "value" : 10},
             { "name" : "intimidation", "value" : 0},
             { "name" : "communication", "value" : 0},
