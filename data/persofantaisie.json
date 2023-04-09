@@ -29,6 +29,12 @@
             { "name" : "esprit", "value" : 0},
             { "name" : "social", "value" : 0}
         ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
+        ],
         "ss_stats_bonus" : [
             { "name" : "pugilat", "value" : -12},
             { "name" : "arme_cac", "value" : 35},
@@ -123,10 +129,10 @@
             { "name" : "Faible consitution", "description" : "Tenir un adversaire au corps a corps l'affaiblie, elle est pas faite pour ça", "effect" : "-10 CAC et Esquive, -5 Vitesse si plus de 2 tours au CAC"}
         ],
         "competence" : [
-            {"name" : "Lance Sylhet", "description" : "Génère un portail derrière elle d'où surgit une longue lance fondant sur sa cible avant de disparaitre a l'impact", "effect" : "1d8 dégat"},
-            {"name" : "Perturbation mentale", "description" : "Utilise sa magie pour perturber les pensées de sa cible, la rendant confuse et perturbant ses actions", "effect" : "Rend confus"},
-            {"name" : "Spiral Break", "description" : "Les mouvements de sa cible deviennent bien plus rapide", "effect" : "2 actions a la cible par tour"},
-            {"name" : "Green Heart", "description" : "Transformation où elle se met a léviter, et ses mouvements s'accélèrent", "effect" : "-30 en magie, +10 en pilotage, +10 en parade; +10 en agilité, +5 en charisme, annule \"Faible Consitution\", 2 actions par tour"}
+            {"name" : "Lance Sylhet", "description" : "Génère un portail derrière elle d'où surgit une longue lance fondant sur sa cible avant de disparaitre a l'impact", "effect" : "1d8 dégat", "cost" : "2 PE"},
+            {"name" : "Perturbation mentale", "description" : "Utilise sa magie pour perturber les pensées de sa cible, la rendant confuse et perturbant ses actions", "effect" : "Rend confus", "cost" : "2 PE"},
+            {"name" : "Spiral Break", "description" : "Les mouvements de sa cible deviennent bien plus rapide", "effect" : "2 actions a la cible par tour", "cost" : "4 PE"},
+            {"name" : "Green Heart", "description" : "Transformation où elle se met a léviter, et ses mouvements s'accélèrent", "effect" : "-30 en magie, +10 en pilotage, +10 en parade; +10 en agilité, +5 en charisme, annule \"Faible Consitution\", 2 actions par tour", "cost" : "3PE/tour"}
         ],
         "armes" : [
             {"name" : "Lance de Heros", "description" : "Un peu pliée, mais personne ne sait pourquoi sauf elle", "polyvalence" : "Arme à deux mains", "effect" : ""},
@@ -173,6 +179,12 @@
             { "name" : "esprit", "value" : 0},
             { "name" : "social", "value" : 0}
         ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
+        ],
         "ss_stats_bonus" : [
             { "name" : "pugilat", "value" : 19},
             { "name" : "arme_cac", "value" : 32},
@@ -202,9 +214,9 @@
             { "name" : "esquive", "value" : 0},
             { "name" : "parade", "value" : 0},
             { "name" : "discretion", "value" : 0},
-            { "name" : "observation", "value" : 0},
-            { "name" : "perception", "value" : -10},
-            { "name" : "psyche", "value" : 10},
+            { "name" : "observation", "value" : -10},
+            { "name" : "perception", "value" : 10},
+            { "name" : "psyche", "value" : 0},
             { "name" : "intimidation", "value" : 0},
             { "name" : "communication", "value" : 0},
             { "name" : "autorite", "value" : 0},
@@ -267,9 +279,9 @@
             { "name" : "Marques noires (plus actif mtn elle a des cicatrices)", "description" : "En y regardant bien, le corps de Lisa arbore de nombreuses marques noirâtres … ", "effect" : "-45 Récupération"}
         ],
         "competence" : [
-            {"name" : "Régénération Express", "description" : "La régénération de Lisa est anormalement plus rapide que la moyenne.", "effect" : "1d8 dégat"},
-            {"name" : "Sans-avec-Sens", "description" : "Lisa retire son ouïe, son odorat, son touché, sa vue ou/et sa parole pour accélérer sa régénération corporelle.", "effect" : "Gain de PV de 1D2 par sens, sur jet de Mental réussi. Si 3 sens ou plus sont retirés, elle effectue un jet de régénération tous les tours même blessée"},
-            {"name" : "Création de magie", "description" : "Lisa peut générer tout type de sort et incantation. Consomme plus qu'un mage classique.", "effect" : "Cout variable en fonction du sort +1 pe sauf dans les sort de l'élément eau ou en utilisant son grimoire. Lisa étant maitresse élémentaire de l'eau à la base."},
+            {"name" : "Régénération Express", "description" : "La régénération de Lisa est anormalement plus rapide que la moyenne.", "effect" : "+45 Régénération, si Lisa n’est pas blessée durant le tour, + 1PV sur jet de régénération réussi. Cet effet peut être amplifié par Sans-avec-Sens.", "cost" : "/"},
+            {"name" : "Sans-avec-Sens", "description" : "Lisa retire son ouïe, son odorat, son touché, sa vue ou/et sa parole pour accélérer sa régénération corporelle.", "effect" : "Gain de PV de 1D2 par sens, sur jet de Mental réussi. Si 3 sens ou plus sont retirés, elle effectue un jet de régénération tous les tours même blessée", "cost" : "/"},
+            {"name" : "Création de magie", "description" : "Lisa peut générer tout type de sort et incantation. Consomme plus qu'un mage classique.", "effect" : "Cout variable en fonction du sort +1 pe sauf dans les sort de l'élément eau ou en utilisant son grimoire. Lisa étant maitresse élémentaire de l'eau à la base.", "cost" : "/"},
             {"name" : "Maitrise du temps", "description" : "Lisa maitrise la \"magie du temps\".", "effect" : "j'vais pleurer"}
         ],
         "armes" : [
@@ -315,6 +327,12 @@
             { "name" : "corps", "value" : -5},
             { "name" : "esprit", "value" : 0},
             { "name" : "social", "value" : 0}
+        ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
         ],
         "ss_stats_bonus" : [
             { "name" : "pugilat", "value" : 8},
@@ -408,10 +426,10 @@
             { "name" : "Druide", "description" : "Si vous devez tuer un druide, attirez-le en ville : il sera alors privé de la plupart de ses pouvoirs. En revanche, ne vous laissez pas attirer en forêt…", "effect" : "-30 en magie brute en milieu urbain ; +10 en magie brute et -1 PE de coût de compétence en milieu rural, -2 PE en foret"}
         ],
         "competence" : [
-            {"name" : "Soin du sol", "description" : "De très petites racines sorte du sol pour venir se planter dans les jambes de la cible, se faufilant sans mal dans ses bottes. Un peu douloureux au début, mais très bénéfique à terme.", "effect" : "Rend 4 PV à la cible, mais celle si est immobiliser pour 1 tour."},
-            {"name" : "Ecorce protectrice", "description" : "La cible est rapidement recouverte d'une épaisse écorce protégeant son corps de la plupart des attaques, mais l'empêchant d'effectuer le moindre mouvement.", "effect" : "Augmente la résistance physique et magique de la cible de 10, mais lui inflige paralysie."},
-            {"name" : "Mur de ronce", "description" : "En un mouvement de bras, Braham est capable de lever une muraille de ronces entre lui et ses ennemis. Et en un mouvement de cisaille, il est capable de les abattre.", "effect" : "Les ronces ralentissent loudement et inflige 2 dégats physiques à toute personne dans leur zone"},
-            {"name" : "La voie de l'alchimiste", "description" : "Alchimiste accompli, Braham passe une bonne partie de son temps à expérimenter divers mélanges.", "effect" : "Permet de créer une potion connu . Aucun coût dans les milieux ruraux."}
+            {"name" : "Soin du sol", "description" : "De très petites racines sorte du sol pour venir se planter dans les jambes de la cible, se faufilant sans mal dans ses bottes. Un peu douloureux au début, mais très bénéfique à terme.", "effect" : "Rend 4 PV à la cible, mais celle si est immobiliser pour 1 tour.", "cost" : "3 PE"},
+            {"name" : "Ecorce protectrice", "description" : "La cible est rapidement recouverte d'une épaisse écorce protégeant son corps de la plupart des attaques, mais l'empêchant d'effectuer le moindre mouvement.", "effect" : "Augmente la résistance physique et magique de la cible de 10, mais lui inflige paralysie.", "cost" : "3PE/tour"},
+            {"name" : "Mur de ronce", "description" : "En un mouvement de bras, Braham est capable de lever une muraille de ronces entre lui et ses ennemis. Et en un mouvement de cisaille, il est capable de les abattre.", "effect" : "Les ronces ralentissent loudement et inflige 2 dégats physiques à toute personne dans leur zone", "cost" : "2 PE"},
+            {"name" : "La voie de l'alchimiste", "description" : "Alchimiste accompli, Braham passe une bonne partie de son temps à expérimenter divers mélanges.", "effect" : "Permet de créer une potion connu . Aucun coût dans les milieux ruraux.", "cost" : "/"}
         ],
         "armes" : [
             {"name" : "Fronde", "description" : "Une fronde de simple facture, composée d'un manche en noyer et d'une lanière en cuir souple.", "polyvalence" : "Arme à une main", "effect" : "Permet de propulsé n'importe quelle petit objet, comme une pierre par exemple."}
@@ -457,6 +475,12 @@
             { "name" : "corps", "value" : 0},
             { "name" : "esprit", "value" : 0},
             { "name" : "social", "value" : 0}
+        ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
         ],
         "ss_stats_bonus" : [
             { "name" : "pugilat", "value" : 4},
@@ -552,9 +576,9 @@
             { "name" : "intimidant", "description" : "Qu'il est rassurant d'avoir un berserk de son côté ! L'inverse en revanche…", "effect" : "+10 en autorité sur les alliés +10 en intimidations en combat"}
         ],
         "competence" : [
-            {"name" : "Coup du destin", "description" : "Au lieu de faire comme à son habitude et taper dans le tas, Björn s'attaque aux protections de son adversaire grâce a des coups précis et puissants", "effect" : "-Inflige Fissure et Etourdi à une cible unique portant une armure -Sans armure : Inflige assommé à une cible unique"},
-            {"name" : "Berserker", "description" : "Björn laisse sa colère le submerger, il ne fait alors plus la distinction entre alliés et ennemies. Un conseil ? fuyez !", "effect" : "Lorsque sa colère le surpasse, Bjorn passe en mode Berserk (+5 intimidation, +10 en réussite critique +2 DPS au CAC) et doit faire un jet de Mental pour garder contrôle de soi. En cas d’échec, il attaquera la cible la plus proche, amis comme ennemi. Pour se calmer, Bjorn devra de nouveau réussir un jet de Mental, Bien que ses alliés peuvent faire un jet de communication pour le faire revenir à lui prématurément."},
-            {"name" : "Cri de guerre", "description" : "Björn rallie ses troupes et leur donne une partie de sa rage de vaincre.", "effect" : "- Si Björn est au dessus de 50% de ses pv, le cri donne un bonus général de +5 à ses alliés pendant 2 tours. - Si Björn est en dessous de 50%; le cri donne un bonus général de +10 à ses alliés pendant 2 tours et un bonus général de +5 à lui même pendant 1 tour."}
+            {"name" : "Coup du destin", "description" : "Au lieu de faire comme à son habitude et taper dans le tas, Björn s'attaque aux protections de son adversaire grâce a des coups précis et puissants", "effect" : "-Inflige Fissure et Etourdi à une cible unique portant une armure -Sans armure : Inflige assommé à une cible unique", "cost" : "2 PE"},
+            {"name" : "Berserker", "description" : "Björn laisse sa colère le submerger, il ne fait alors plus la distinction entre alliés et ennemies. Un conseil ? fuyez !", "effect" : "Lorsque sa colère le surpasse, Bjorn passe en mode Berserk (+5 intimidation, +10 en réussite critique +2 DPS au CAC) et doit faire un jet de Mental pour garder contrôle de soi. En cas d’échec, il attaquera la cible la plus proche, amis comme ennemi. Pour se calmer, Bjorn devra de nouveau réussir un jet de Mental, Bien que ses alliés peuvent faire un jet de communication pour le faire revenir à lui prématurément.", "cost" : "A venir"},
+            {"name" : "Cri de guerre", "description" : "Björn rallie ses troupes et leur donne une partie de sa rage de vaincre.", "effect" : "- Si Björn est au dessus de 50% de ses pv, le cri donne un bonus général de +5 à ses alliés pendant 2 tours. - Si Björn est en dessous de 50%; le cri donne un bonus général de +10 à ses alliés pendant 2 tours et un bonus général de +5 à lui même pendant 1 tour.", "cost" : "1 PE"}
         ],
         "armes" : [
             {"name" : "Cimeterre ", "description" : "Une épée à lame courte récuperée à Lintis", "polyvalence" : "Arme à une main", "effect" : "1D6+1+3 aux dps sous une réussite sous 20"},
@@ -602,6 +626,12 @@
             { "name" : "corps", "value" : 6},
             { "name" : "esprit", "value" : 0},
             { "name" : "social", "value" : 0}
+        ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
         ],
         "ss_stats_bonus" : [
             { "name" : "pugilat", "value" : 4},
@@ -695,8 +725,8 @@
             { "name" : "Obsessionnel", "description" : "Gregor possède un gros défaut, celui de ne jamais lacher prise, ce qui peut entrainer des conséquences néfastes lorsque le calme est de mise", "effect" : "-10 régénération des PV"}
         ],
         "competence" : [
-            {"name" : "Multi-coup", "description" : "Si le premier coup n’a pas suffi, Gregor n’hésitera pas à en donner un second", "effect" : "Applique célérité sur soit durant 1 tour (donne l’opportunité de frapper deux fois)"},
-            {"name" : "STRIKE !!!!!", "description" : "Prenant de l’élan, Gregor charge un groupe d’adversaire pour les faire chuter !", "effect" : "Applique l’effet étourdi aux adversaires"}
+            {"name" : "Multi-coup", "description" : "Si le premier coup n’a pas suffi, Gregor n’hésitera pas à en donner un second", "effect" : "Applique célérité sur soit durant 1 tour (donne l’opportunité de frapper deux fois)", "cost" : "5 PE"},
+            {"name" : "STRIKE !!!!!", "description" : "Prenant de l’élan, Gregor charge un groupe d’adversaire pour les faire chuter !", "effect" : "Applique l’effet étourdi aux adversaires", "cost" : "2 PE"}
         ],
         "armes" : [
             {"name" : "Grand marteau d’armes", "description" : "Un long marteau à conçu pour être manié par les plus forts, mieux vaut ne pas être sa cible…", "polyvalence" : "Arme à deux mains", "effect" : "1D8"},
@@ -710,5 +740,156 @@
         ],
         "argent" : [
         ]
+    },
+    {
+        "info" : {
+            "prenom": "Blanc",
+            "nom": "De Valois",
+            "age": 17,
+            "sexe": "Femme",
+            "taille": "1m52",
+            "poids": 44,
+            "race": "Humain",
+            "classe": "Protectrice érudit",
+            "metier": "Princesse",
+            "loisir": "Lecture",
+            "presentation" : "Vert est l'ainée d'une famille royale, Elle était destinée à obtenir le trône, mais son manque d'attention et de discipline quant aux devoirs d'une futur reine ont poussé ses parents à faire de sa petite sœur l'héritière, au grand bonheur des deux.  Au sein de sa famille, elle s'entend très bien avec ses deux soeurs, Noire et Blanc. Elle s'est beaucoup occupée d'elles étant la grande soeur, mais, une fois Noire en âge de prendre le relais, elle a fini par souvent s'éclipser du château, allant visitant ce qu'elle désirait, quand elle voulait, et rentrant quand bon lui semblait. Elle est donc une aventurière chevronnée, sans oublier une très bonne lancière, qui parcourt le monde sans objectif particulier, a part découvrir de nouvelles choses. Les raisons derrière sa transformation sont inconnus de tout le monde, elle comprit. Elle a toujours pus le faire, et le maîtrise assez bien. Il semblerait tout de même que sa mère détiennent les clés de ce mystère."
+        },
+        "illustration" : "../images/fantaisie/pp/Blanc.png",
+        "pv" : 20,
+        "pe" : 10,
+        "gds_stats" : [
+            { "name" : "Constitution", "value" : 60},
+            { "name" : "Agilité", "value" : 50},
+            { "name" : "Mental", "value" : 45},
+            { "name" : "Magie", "value" : 40},
+            { "name" : "Charisme", "value" : 45},
+            { "name" : "Savoir", "value" : 60}
+        ],
+        "maitrise_bonus" : [
+            { "name" : "corps", "value" : 0},
+            { "name" : "esprit", "value" : 0},
+            { "name" : "social", "value" : 0}
+        ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 2},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 2},
+            { "name" : "bonus_magique", "value" : 0}
+        ],
+        "ss_stats_bonus" : [
+            { "name" : "pugilat", "value" : 2},
+            { "name" : "arme_cac", "value" : 13},
+            { "name" : "precision", "value" : -23},
+            { "name" : "esquive", "value" : 18},
+            { "name" : "parade", "value" : -1},
+            { "name" : "discretion", "value" : 6},
+            { "name" : "observation", "value" : 25},
+            { "name" : "perception", "value" : -11},
+            { "name" : "psyche", "value" : 1},
+            { "name" : "intimidation", "value" : -12},
+            { "name" : "communication", "value" : 7},
+            { "name" : "autorite", "value" : 14},
+            { "name" : "medecine", "value" : -33},
+            { "name" : "pilotage", "value" : -17},
+            { "name" : "artisanat", "value" : -17},
+            { "name" : "vitesse", "value" : 17},
+            { "name" : "instinct", "value" : 10},
+            { "name" : "sang_froid", "value" : 2},
+            { "name" : "regen_pv", "value" : 7},
+            { "name" : "recup_pe", "value" :-8}
+        ],
+        "ss_stats_traits" : [
+            { "name" : "pugilat", "value" : 0},
+            { "name" : "arme_cac", "value" : 0},
+            { "name" : "precision", "value" : 0},
+            { "name" : "esquive", "value" : 0},
+            { "name" : "parade", "value" : 0},
+            { "name" : "discretion", "value" : 0},
+            { "name" : "observation", "value" : 0},
+            { "name" : "perception", "value" : 0},
+            { "name" : "psyche", "value" : 0},
+            { "name" : "intimidation", "value" : 0},
+            { "name" : "communication", "value" : 0},
+            { "name" : "autorite", "value" : 0},
+            { "name" : "medecine", "value" : 0},
+            { "name" : "pilotage", "value" : 0},
+            { "name" : "artisanat", "value" : 0},
+            { "name" : "vitesse", "value" : 0},
+            { "name" : "instinct", "value" : 0},
+            { "name" : "sang_froid", "value" : 0},
+            { "name" : "regen_pv", "value" : 0},
+            { "name" : "recup_pe", "value" : 0}
+        ],
+        "contexte" : [
+            { "name" : "cpugilat", "value" : 0},
+            { "name" : "cpugilat2", "value" : 0},
+            { "name" : "ccac", "value" : 10, "si" : "utilise son marteau"},
+            { "name" : "ccac2", "value" : 0},
+            { "name" : "cprecision", "value" : 0},
+            { "name" : "cprecision2", "value" : 0},
+            { "name" : "cesquive", "value" : 0},
+            { "name" : "cesquive2", "value" : 0},
+            { "name" : "cparade", "value" : 0},
+            { "name" : "cparade2", "value" : 0},
+            { "name" : "cdiscretion", "value" : 0},
+            { "name" : "cdiscretion2", "value" : 0},
+            { "name" : "cobservation", "value" : 0},
+            { "name" : "cobservation2", "value" : 0},
+            { "name" : "cperception", "value" : 0},
+            { "name" : "cperception2", "value" : 0},
+            { "name" : "cpsyche", "value" : 0},
+            { "name" : "cpsyche2", "value" : 0},
+            { "name" : "cintimidation", "value" : 15, "si" : "contrariée"},
+            { "name" : "cintimidation2", "value" : -40, "si" : "contrariée"},
+            { "name" : "ccommunication", "value" : 10, "si" : "contrariée"},
+            { "name" : "ccommunication2", "value" : -20, "si" : "timide"},
+            { "name" : "cautorite", "value" : 0},
+            { "name" : "cautorite2", "value" : 0},
+            { "name" : "cmedecine", "value" : 0},
+            { "name" : "cmedecine2", "value" : 0},
+            { "name" : "cpilotage", "value" : 0},
+            { "name" : "cpilotage2", "value" : 0},
+            { "name" : "cartisanat", "value" : 0},
+            { "name" : "cartisanat2", "value" : 0},
+            { "name" : "cvitesse", "value" : 0},
+            { "name" : "cvitesse2", "value" : 0},
+            { "name" : "cinstinct", "value" : 0},
+            { "name" : "cinstinct2", "value" : 0},
+            { "name" : "csang-froid", "value" : 0},
+            { "name" : "csang-froid2", "value" : 0},
+            { "name" : "cregen", "value" : 0},
+            { "name" : "cregen2", "value" : 0},
+            { "name" : "crecup", "value" : 0},
+            { "name" : "crecup2", "value" : 0}
+        ],
+        "trait" : [
+            { "name" : "La patience est un plat qui se mange", "description" : "Blanc n'est pas un exemple de patience. La contrarier peut la rendre bien terrifiante...", "effect" : "-40 en Communication, +10 Autorité, +15 Intimidation si quelqu'un la contrarie"},
+            { "name" : "Pas très bavarde", "description" : "Si la personne face a elle n'a absolument pas sa confiance, elle est assez timide au final.", "effect" : "-20 en Communication"},
+            { "name" : "Très solide et forte", "description" : "Le corps de Blanc est incroyablement dur, elle n'a pas besoin de porter d'armure mais c'est comme si elle en avait une. Ces muscles aussi sont impressionant pour sa carrure !", "effect" : "+2 resistance physique et magique, pas de blessures apparentes au dessus de 10PV, peut manier son marteau à une main"},
+            { "name" : "Rat de bibliothèques", "description" : "L'avantage d'être de famille royale, c'est qu'on à accès a beaucoup de livres, et c'est le passe temps favoris de Blanc, qui connait beaucoup de choses sur l'histoire", "effect" : "+20 en Savoir si une information est susceptible d'être dans un livre"},
+            { "name" : "Ca va faire Boum Boum", "description" : "Blanc est plutôt douée dans le maniement d'arme, mais ce qu'elle préfère, c'est son marteau. Au moins y'a pas besoin de réfléchir. Elle peut continuer de penser à ses livres, même en combat.", "effect" : "+10 en arme au cac lorsqu'elle utilise son marteau"}
+        ],
+        "competence" : [
+            {"name" : "Convaincante, mais pas naturellement", "description" : "Blanc à pus expérimenter qu'il n'y a rien de mieux pour convaincre quelqu'un que de lui inspirer la crainte, et quoi de mieux que d'ajouter un peu de magie pour faire plus peur ? ", "effect" : "S'entoure d'une aura terrifiante, rallie quelqu'un a son avis sous jet d'intimidation (+20 Intimidation)", "cost" : "1 PE"},
+            {"name" : "Invincible !!?!", "description" : "Le corps de Blanc devient solide comme de l'acier, mais… elle ne peut pas se déplacer… dommage….", "effect" : "Devient insensible a toutes les attaques pendant 2 tours, mais est incapable de se déplacer, ne peut pas utiliser son marteau et rien faire lors du premier tour.", "cost" : "2 PE"},
+            {"name" : "Ravin Tremblant", "description" : "Donne un puissant coup de marteau sur le sol qui le fait trembler et se surelever dans une direction dans un rayon de 5 mètres", "effect" : "1D6 de dégats et fait perdre l'équilibre aux cibles dans l'effet", "cost" : "3 PE"},
+            {"name" : "Zerschlangen", "description" : "Canalyse un peu de magie au bout de son marteau pour jouer au base-ball avec sa cible, la projettant sur plusieurs mètres", "effect" : "1D8 + Projection", "cost" : "2 PE"},
+            {"name" : "Zerstorung", "description" : "Saute dans les airs et retombe lourdement pour frapper le sol, le faisant trembler et se surelever dans un rayon de X-1 mètres autour d'elle", "effect" : "1D6 de dégats et fait perdre l'équilibre aux cibles dans l'effet", "cost" : "X PE"}
+        ],
+        "armes" : [
+            {"name" : "Marteau de héros", "description" : "Un très beau marteau à l'aspect assez particulier, il doit valoir très très chère. Elle peut le faire apparaitre et disparaitre à sa guise.", "polyvalence" : "Arme polyvalente", "effect" : "1D6 à une main, 1D8 à deux mains"},
+            {"name" : "Petite Dague", "description" : "Une petite dague, cadeau de sa grande sœur qui est surtout utile pour couper des branches, feuilles et fruits à la base, mais qui peut tout de même être utile dans certaines situations.", "polyvalence" : "Arme à une main", "effect" : "1D4"}
+        ],
+        "vetements" : [
+            {"name" : "Gros manteau et jolie robe Blanche", "description" : "Blanc est toujours frileuse, même quand il fait chaud, toujours un gros manteau, même trop grand pour elle.", "poids" : "Négligeable", "effect" : ""},
+            {"name" : "Sac a lanière épais", "description" : "Ce qu'il y a dedans est vraiment épais, elle peut s'en servir comme d'un petit bouclier.","poids" : "Négligeable", "effect" : "+5 en parade"}
+        ],
+        "bagages" : [
+            {"name" : "Encyclopédie", "description" : "Le gros livre dans le sac a lanière de Blanc. Renferme beaucoup de connaissance sur l'histoire du monde et ce qui le compose. Elle l'étoffe jours après jours", "quality" : 3}
+        ],
+        "argent" : [
+        ]
     }
+
 ]

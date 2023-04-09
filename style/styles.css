@@ -13,7 +13,7 @@
 
 #Lisa0 span, #Lisa0 td{
     font-family: 'Dancing Script';
-    color: blue;
+    color: purple;
 }
 
 
@@ -26,16 +26,9 @@
     font-family: 'Cardo';
     color: red
 }
-#Braham2 .info_left, #Braham2 .info_right{
-    width: 26%;
-}
-#Braham2 .bordure_pv{
-    left: 33.5%;
-}
-#Braham2 .bordure_pe{
-    right: 33.5%;
-}
-#Braham2 .ss_stats_right .police, #Braham2 .info_right{
+
+
+#Braham2 .ss_stats_right .police{
     text-align: end;
 }
 
@@ -50,6 +43,12 @@
 }
 #Gregor4 .info_right{
     font-size: 20px;
+}
+
+
+#Blanc5 span, #Blanc5 td{
+    font-family: 'Dancing Script';
+    color: rgb(225, 161,161);
 }
 
 header{

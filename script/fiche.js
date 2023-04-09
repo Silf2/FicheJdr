@@ -142,10 +142,11 @@ window.addEventListener("hashchange", function() {
                     esprit.textContent = espritValue;
                     social.textContent = socialValue;
 
-                    resistanceBonus(resistancePhysique, constitutionValue)
-                    resistanceBonus(bonusPhysique, constitutionValue)
-                    resistanceBonus(resistanceMagique, magieValue)
-                    resistanceBonus(bonusMagique, magieValue)
+                    resistanceBonus(resistancePhysique, constitutionValue, personnage.resistance_bonus[0].value)
+                    console.log(personnage.resistance_bonus[0].value)
+                    resistanceBonus(bonusPhysique, constitutionValue, personnage.resistance_bonus[1].value)
+                    resistanceBonus(resistanceMagique, magieValue, personnage.resistance_bonus[2].value)
+                    resistanceBonus(bonusMagique, magieValue, personnage.resistance_bonus[3].value)
 
                     const pugilatValue = Math.floor((2*constitutionValue + corpsValue )/3) + personnage.ss_stats_bonus[0].value + personnage.ss_stats_traits[0].value;
                     const armeCaCValue = Math.floor((constitutionValue + 2*corpsValue)/3) + personnage.ss_stats_bonus[1].value + personnage.ss_stats_traits[1].value;
@@ -245,13 +246,13 @@ window.addEventListener("hashchange", function() {
 });
 
 
-function resistanceBonus(resbonus, comparatif){
+function resistanceBonus(resbonus, comparatif, personnage){
     if(comparatif >= 70){
-        resbonus.innerHTML = 1;
+        resbonus.innerHTML = 1 + personnage;
     } else if(comparatif <=30){
-        resbonus.innerHTML = -1;
+        resbonus.innerHTML = -1 + personnage;
     } else{
-        resbonus.innerHTML = 0;
+        resbonus.innerHTML = 0 + personnage;
     }
 
 }
@@ -265,6 +266,10 @@ function tableauTraitCompetenceBagage(classDiv, idPerso, tableau){
     let headerCell1 = headerRow.insertCell();
     let headerCell2 = headerRow.insertCell();
     let headerCell3 = headerRow.insertCell();
+    if(classDiv === "tableau-competence"){
+        let headerCell4 = headerRow.insertCell();
+        headerCell4.innerHTML = "<b>Coût</b>";
+    }
     headerCell1.innerHTML = "<b>Nom</b>";
     headerCell2.innerHTML = "<b>Description</b>";
     if(classDiv !== "tableau-objet"){
@@ -279,6 +284,10 @@ function tableauTraitCompetenceBagage(classDiv, idPerso, tableau){
         let cell1= row.insertCell();
         let cell2= row.insertCell();
         let cell3= row.insertCell();
+        if(classDiv ==="tableau-competence"){
+            let cell4 = row.insertCell();
+            cell4.innerHTML = traitCompetence.cost;
+        }
         cell1.innerHTML = traitCompetence.name;
         cell2.innerHTML = traitCompetence.description;
         if(classDiv !== "tableau-objet"){
