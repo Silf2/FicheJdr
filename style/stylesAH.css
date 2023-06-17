@@ -1,0 +1,26 @@
+body{
+    object-fit: contain;
+    background-image: url(../images/fantaisie/FondBrume.jpg);
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20%;
+    color: white;
+    font-family: 'Dancing Script';
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    filter: blur(2.5px);
+}
+
+.glow{
+    width: 10%;
+    object-fit: contain;
+    filter: blur(15px);
+}
+
+.yeux{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
