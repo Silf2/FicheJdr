@@ -129,10 +129,10 @@
             { "name" : "Faible consitution", "description" : "Tenir un adversaire au corps a corps l'affaiblie, elle est pas faite pour ça", "effect" : "-10 CAC et Esquive, -5 Vitesse si plus de 2 tours au CAC"}
         ],
         "competence" : [
-            {"name" : "Lance Sylhet", "description" : "Génère un portail derrière elle d'où surgit une longue lance fondant sur sa cible avant de disparaitre a l'impact", "effect" : "1d8 dégat", "cost" : "2 PE"},
+            {"name" : "Tri-Lance Solaire", "description" : "Vert génère un portail à partir duquel elle peut invoquer un trident doré aux pointes enflammées.", "effect" : "Projectile de moyenne portée. Provoque une petite explosion à l'impact (1d4). Peut être utilisée au corps à corps le temps d'une attaque d'1d6+2 avant de disparaitre", "cost" : "2 PE"},
             {"name" : "Perturbation mentale", "description" : "Utilise sa magie pour perturber les pensées de sa cible, la rendant confuse et perturbant ses actions", "effect" : "Rend confus", "cost" : "2 PE"},
             {"name" : "Spiral Break", "description" : "Les mouvements de sa cible deviennent bien plus rapide", "effect" : "2 actions a la cible par tour", "cost" : "4 PE"},
-            {"name" : "Green Heart", "description" : "Transformation où elle se met a léviter, et ses mouvements s'accélèrent", "effect" : "-30 en magie, +10 en pilotage, +10 en parade; +10 en agilité, +5 en charisme, annule \"Faible Consitution\", 2 actions par tour", "cost" : "3PE/tour"}
+            {"name" : "Lion Heart - Ancient Heart", "description" : "Les énergies d'un passé noyé dans la brume et d'un présent baignant dans les flammes sont combinées et donnent forme à une transformation dite mystique, avec une touche de danger primitif.", "effect" : "Vert lance 1d2 : Si le résultat est 1, elle se transforme en Lion Heart. Si le résultat est 2, elle se transforme en Ancient Heart", "cost" : "3PE/tour si LH, ∞PE si AH"}
         ],
         "armes" : [
             {"name" : "Lance de Heros", "description" : "Un peu pliée, mais personne ne sait pourquoi sauf elle", "polyvalence" : "Arme à deux mains", "effect" : ""},
@@ -426,10 +426,11 @@
             { "name" : "Druide", "description" : "Si vous devez tuer un druide, attirez-le en ville : il sera alors privé de la plupart de ses pouvoirs. En revanche, ne vous laissez pas attirer en forêt…", "effect" : "-30 en magie brute en milieu urbain ; +10 en magie brute et -1 PE de coût de compétence en milieu rural, -2 PE en foret"}
         ],
         "competence" : [
-            {"name" : "Soin du sol", "description" : "De très petites racines sorte du sol pour venir se planter dans les jambes de la cible, se faufilant sans mal dans ses bottes. Un peu douloureux au début, mais très bénéfique à terme.", "effect" : "Rend 4 PV à la cible, mais celle si est immobiliser pour 1 tour.", "cost" : "3 PE"},
+            {"name" : "Racines Salvatrices", "description" : "D'épaisses racines sortent du sol et viennent serpenter sur le corps d'une cible, la faisant revêtir une armure de ronces dont la sève guérit les blessures.", "effect" : "La cible gagne 1 point d'armure légère et se soigne de 4PV/ tour.", "cost" : "3PE/tour"},
             {"name" : "Ecorce protectrice", "description" : "La cible est rapidement recouverte d'une épaisse écorce protégeant son corps de la plupart des attaques, mais l'empêchant d'effectuer le moindre mouvement.", "effect" : "Augmente la résistance physique et magique de la cible de 10, mais lui inflige paralysie.", "cost" : "3PE/tour"},
             {"name" : "Mur de ronce", "description" : "En un mouvement de bras, Braham est capable de lever une muraille de ronces entre lui et ses ennemis. Et en un mouvement de cisaille, il est capable de les abattre.", "effect" : "Les ronces ralentissent loudement et inflige 2 dégats physiques à toute personne dans leur zone", "cost" : "2 PE"},
-            {"name" : "La voie de l'alchimiste", "description" : "Alchimiste accompli, Braham passe une bonne partie de son temps à expérimenter divers mélanges.", "effect" : "Permet de créer une potion connu . Aucun coût dans les milieux ruraux.", "cost" : "/"}
+            {"name" : "La voie de l'alchimiste", "description" : "Alchimiste accompli, Braham passe une bonne partie de son temps à expérimenter divers mélanges.", "effect" : "Permet de créer une potion connu . Aucun coût dans les milieux ruraux.", "cost" : "/"},
+            {"name" : "Feu de Forêt", "description" : "Braham peut se mettre à cracher du feu en ligne droite jusqu'à 2m devant lui.", "effect" : "Enflamme les cibles vulnérables au feu (1d6+2/tour enflammé)", "cost" : "6PE"}
         ],
         "armes" : [
             {"name" : "Fronde", "description" : "Une fronde de simple facture, composée d'un manche en noyer et d'une lanière en cuir souple.", "polyvalence" : "Arme à une main", "effect" : "Permet de propulsé n'importe quelle petit objet, comme une pierre par exemple."}
@@ -576,8 +577,8 @@
             { "name" : "intimidant", "description" : "Qu'il est rassurant d'avoir un berserk de son côté ! L'inverse en revanche…", "effect" : "+10 en autorité sur les alliés +10 en intimidations en combat"}
         ],
         "competence" : [
-            {"name" : "Coup du destin", "description" : "Au lieu de faire comme à son habitude et taper dans le tas, Björn s'attaque aux protections de son adversaire grâce a des coups précis et puissants", "effect" : "-Inflige Fissure et Etourdi à une cible unique portant une armure -Sans armure : Inflige assommé à une cible unique", "cost" : "2 PE"},
-            {"name" : "Berserker", "description" : "Björn laisse sa colère le submerger, il ne fait alors plus la distinction entre alliés et ennemies. Un conseil ? fuyez !", "effect" : "Lorsque sa colère le surpasse, Bjorn passe en mode Berserk (+5 intimidation, +10 en réussite critique +2 DPS au CAC) et doit faire un jet de Mental pour garder contrôle de soi. En cas d’échec, il attaquera la cible la plus proche, amis comme ennemi. Pour se calmer, Bjorn devra de nouveau réussir un jet de Mental, Bien que ses alliés peuvent faire un jet de communication pour le faire revenir à lui prématurément.", "cost" : "A venir"},
+            {"name" : "Soif-de-Sang", "description" : "Dans cet état, seul le sang peut noyer le feu qui le consomme.", "effect" : "Sur un jet de mental, Bjorn prend feu tandis que la douleur le renforce en combat. Il gagne les effets suivants : Réussite Critique Capées à 10, Echecs critiques à 91, Intimide les ennemis faibles à volonté, Son mental passe a 80, Les attaques aux CaC font dégats max, Attaques critiques font dégats doubles, Aucune communication possible.Rester sous cette forme de monstre des champs de bataille met sa volonté à l'épreuve à chaque seconde qu'il passe dans les flammes, Björn doit faire un jet de mental au début de chaque tour : S'il réussit, il reste dans cet état et subit un malus de -10 a chaque tours jusqu'a 5. S'il échoue, il perd cet état et est étourdis le reste du tour.", "cost" : "1d4+2 PV/tour"},
+            {"name" : "Goredrinker", "description" : "Lorsque Björn blesse une cible capable de saigner, il peut sacrifier son énergie pour absorber une partie des dégâts qu'il lui a infligé.", "effect" : "Absorbe la moitié des dégâts de la dernière attaque. En mode Soif-de-Sang, absorbe la totalité des dégâts de la dernière attaque.", "cost" : "2 PE"},
             {"name" : "Cri de guerre", "description" : "Björn rallie ses troupes et leur donne une partie de sa rage de vaincre.", "effect" : "- Si Björn est au dessus de 50% de ses pv, le cri donne un bonus général de +5 à ses alliés pendant 2 tours. - Si Björn est en dessous de 50%; le cri donne un bonus général de +10 à ses alliés pendant 2 tours et un bonus général de +5 à lui même pendant 1 tour.", "cost" : "1 PE"}
         ],
         "armes" : [
@@ -725,7 +726,8 @@
             { "name" : "Obsessionnel", "description" : "Gregor possède un gros défaut, celui de ne jamais lacher prise, ce qui peut entrainer des conséquences néfastes lorsque le calme est de mise", "effect" : "-10 régénération des PV"}
         ],
         "competence" : [
-            {"name" : "Multi-coup", "description" : "Si le premier coup n’a pas suffi, Gregor n’hésitera pas à en donner un second", "effect" : "Applique célérité sur soit durant 1 tour (donne l’opportunité de frapper deux fois)", "cost" : "5 PE"},
+            {"name" : "Fracture", "description" : "Grégor imbibe son marteau d'ambre. Sa prochaine attaque fait exploser l'ambre, ses fragments s'envoleront à haute vitesse et iront frapper les cibles à 5m aux alentours.", "effect" : "Grégor peut charger Fracture jusqu'au niveau 3 : (lvl 1) Les cibles à portée subissent 2pts de dégats supplémentaires. (lvl 2) Les cibles à portée subissent 4pts de dégats supplémentaires. (lvl 3) Les cibles à portée subissent dégat max+4pts de dégats supplémentaires. ", "cost" : "2PE/lvl"},
+            {"name" : "Longue vie au Roi", "description" : "Grégor est capable de faire couler de l'ambre depuis les pores de sa peau. L'ambre devient une armure solide au contact de l'air, la rendant peu maniable mais fort résistante. L'ambre peut se répandre sur les entités physiques en contact direct et prolongé avec Grégor.", "effect" : "Grégor peut charger Longue vie au Roi jusqu'au niveau 3 : (lvl 1) Armure lourde d'ambre, se casse après avoir subit 5 pts de dégât. (lvl 2) Armure ultra-lourde d'ambre, se casse après avoir subit 10 pts de dégât.La cible ne peut plus se déplacer et attaquer pendant le même tour.La cible ne peut plus sprinter, sauter ou esquiver.(lvl 3) Cocon d'ambre, se casse après avoir subit 20 pts de dégât. La cible est prisonnière et ne peut plus physiquement agir.", "cost" : "3PE/lvl"},
             {"name" : "STRIKE !!!!!", "description" : "Prenant de l’élan, Gregor charge un groupe d’adversaire pour les faire chuter !", "effect" : "Applique l’effet étourdi aux adversaires", "cost" : "2 PE"}
         ],
         "armes" : [
@@ -841,10 +843,10 @@
             { "name" : "cpsyche", "value" : 0},
             { "name" : "cpsyche2", "value" : 0},
             { "name" : "cintimidation", "value" : 15, "si" : "contrariée"},
-            { "name" : "cintimidation2", "value" : 0},
-            { "name" : "ccommunication", "value" : -40, "si" : "contrariée"},
+            { "name" : "cintimidation2", "value" : -40, "si" : "contrariée"},
+            { "name" : "ccommunication", "value" : 10, "si" : "contrariée"},
             { "name" : "ccommunication2", "value" : -20, "si" : "timide"},
-            { "name" : "cautorite", "value" : 10, "si" : "contrariée"},
+            { "name" : "cautorite", "value" : 0},
             { "name" : "cautorite2", "value" : 0},
             { "name" : "cmedecine", "value" : 0},
             { "name" : "cmedecine2", "value" : 0},
