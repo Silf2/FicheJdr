@@ -23,7 +23,7 @@
 }
 
 #Braham2 span, #Braham2 td{
-    font-family: 'Cardo';
+    font-family: 'Caveat';
     color: red
 }
 
@@ -38,7 +38,7 @@
 }
 
 #Gregor4 span,#Gregor4 td{  
-    font-family: 'Josefin Sans';
+    font-family: 'Caveat';
     color : gray
 }
 #Gregor4 .info_right{
@@ -387,7 +387,6 @@ footer a{
     border-radius: 15px;
     width: 35%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
 }
 
 .ss_stats td{
@@ -437,4 +436,125 @@ footer a{
 
 .conteneur_monnaie{
     margin: auto;
+}
+
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%; 
+    height: 120px; 
+    border-radius: 15px;
+    box-shadow:1px 5px 9px 2px rgba(0,0,0,0.2);
+}
+
+.pp_transfo {
+    width: 100%;
+    height: 415%;
+    object-fit: cover;
+}
+
+.name_transfo{
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.description_transfo{
+    background-color: rgb(215 215 215 / 35%);
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 20px;
+}
+
+.gds_stats_transfo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-bottom: 1%;
+    box-shadow:  1px 5px 9px 2px rgba(0,0,0,0.2);
+    margin-top: 1%;
+    background-color: rgb(215 215 215 / 35%);
+
+}
+
+.gds_stats_transfo td{
+    padding: 10px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.fiche_content_Transfo1{
+    border-radius: 4px;
+    position: relative;
+    width: 80%;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+    z-index: 2;
+    background-size: cover;
+    background-image: url(../images/fantaisie/FondTransfo2.jpg);
+}
+
+.fiche_content_Transfo2{
+    border-radius: 4px;
+    position: relative;
+    width: 80%;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+    z-index: 2;
+    background-size: cover;
+    background-image: url(../images/fantaisie/FondTransfo.jpg);
+}
+
+.img_container_transfo2{
+    margin: auto;
+    overflow: hidden;
+    width: 60%; 
+    height: 120px; 
+    border-radius: 15px;
+    box-shadow:1px 5px 9px 2px rgba(0,0,0,0.2);
+}
+
+.pp_transfo2{
+    width: 100%;
+    height: 625%;
+    object-fit: cover;
+}
+
+#fond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black; /* Couleur de fond de votre choix */
+    z-index: 0; /* Assurez-vous que la section est au-dessus de tout autre contenu */
+}
+
+.name_transfo2{
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+    color: white;
+}
+
+.description_transfo2{
+    background-color: rgb(215 215 215 / 35%);
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 18px;
+    color: white;
 }
