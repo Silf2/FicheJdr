@@ -225,7 +225,7 @@ footer a{
     z-index: -1;
 }
 
-.chapitres_competence, .chapitres_bagage{
+.chapitres_competence, .chapitres_bagage, .chapitres_LH, .chapitres_AH{
     padding: 1%;
     width: 0%;
     margin-bottom: 5px;
@@ -252,7 +252,7 @@ footer a{
     clip-path: inset(0 0 0 73px);
 }
 
-.chapitres_competence:hover, .chapitres_bagage:hover{
+.chapitres_competence:hover, .chapitres_bagage:hover, .chapitres_AH:hover, .chapitres_LH:hover{
     width: 100%;
 }
 
@@ -265,6 +265,14 @@ footer a{
 
 .chapitres_bagage{
     background-image: url(../images/fantaisie/assets/page_rouge.png);
+}
+
+.chapitres_LH{
+    background-image: url(../images/fantaisie/assets/page_azure.png);
+}
+
+.chapitres_AH{
+    background-image: url(../images/fantaisie/assets/page_noir.png);
 }
 
 .info_container{
