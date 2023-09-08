@@ -292,7 +292,7 @@
         ],
         "vetements" : [
             {"name" : "Robe enchantée d’Invocation", "description" : "Une jolie robe qui convient parfaitement à Lisa dans le quotidien mais également en combat.", "poids" : "Négligeable", "effect" : "Cette robe shonen se régénère ou se détériore en fonction de son porteur."},
-            {"name" : "Sacoche en lanière de cuir", "descritption" : "Sacoche contenant un vieux Grimoire magique assez enigmatique, renfermant sûrement de nombreux sorts. Son poids est tout aussi négligeable qu'elle ne le néglige.", "poids" : "Négligeable", "effect" : "+2 bagages"}
+            {"name" : "Sacoche en lanière de cuir", "description" : "Sacoche contenant un vieux Grimoire magique assez enigmatique, renfermant sûrement de nombreux sorts. Son poids est tout aussi négligeable qu'elle ne le néglige.", "poids" : "Négligeable", "effect" : "+2 bagages"}
         ],
         "bagages" : [
             {"name" : "Babiole bleu", "description" : "Objet énigmatique (pour Lisa) VOLÉ dans la boutique de Pruya dans la cacophonie qu'elle a crée en faisant exploser la-dite boutique", "quality" : 4},
