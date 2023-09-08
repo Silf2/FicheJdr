@@ -229,8 +229,8 @@
             { "name" : "vitesse", "value" : 0},
             { "name" : "instinct", "value" : 0},
             { "name" : "sang_froid", "value" : 0},
-            { "name" : "regen_pv", "value" : 45},
-            { "name" : "recup_pe", "value" : -45}
+            { "name" : "regen_pv", "value" : 0},
+            { "name" : "recup_pe", "value" : 0}
         ],
         "contexte" : [
             { "name" : "pugilat", "value" : 0},
@@ -275,30 +275,32 @@
             { "name" : "recup_pe2", "value" : 0}
         ],
         "trait" : [
-            { "name" : "Possédée", "description" : "Le corps et l’âme ne sont pas encore bien … acclimatés.", "effect" : "-10 Agilité ; -10 Adresse"},
-            { "name" : "Vision des flux magiques", "description" : "isa détecte la plupart des flux magiques, ambiant ou personnel. Hélas, cela brouille sa vue lorsqu‘elle tente d’observer son environnement physique. ", "effect" : "+10 Perception ; -10 0bservation ; +10 Esquive de sorts"},
+            { "name" : "Possédée", "description" : "Le corps et l’âme ne sont pas encore bien … acclimatés.", "effect" : "-10 corps"},
+            { "name" : "Vision des flux magiques", "description" : "Lisa détecte la plupart des flux magiques, ambiant ou personnel. Hélas, cela brouille sa vue lorsqu‘elle tente d’observer son environnement physique. ", "effect" : "+10 Perception ; -10 0bservation ; +10 Esquive de sorts"},
             { "name" : "すばらしい!", "description" : "Etant une très belle femme, Lisa ne passe pas inaperçu aux yeux de ceux qui l’entoure.", "effect" : "+10 Charisme"},
-            { "name" : "Elégante à la rapière", "description" : "Lisa est une escrimeuse accomplie.", "effect" : "+10 CAC & Parade à la rapière ; +5 Vitesse"},
+            { "name" : "Elégante à la rapière", "description" : "Lisa est une escrimeuse accomplie.", "effect" : "+10 CAC & Parade et +5 Vitesseà la rapière"},
             { "name" : "Marques noires (plus actif mtn elle a des cicatrices)", "description" : "En y regardant bien, le corps de Lisa arbore de nombreuses marques noirâtres … ", "effect" : "-45 Récupération"}
         ],
         "competence" : [
-            {"name" : "Régénération Express", "description" : "La régénération de Lisa est anormalement plus rapide que la moyenne.", "effect" : "+45 Régénération, si Lisa n’est pas blessée durant le tour, + 1PV sur jet de régénération réussi. Cet effet peut être amplifié par Sans-avec-Sens.", "cost" : "/"},
+            {"name" : "Régénération Express (non actif)", "description" : "La régénération de Lisa est anormalement plus rapide que la moyenne.", "effect" : "+45 Régénération, si Lisa n’est pas blessée durant le tour, + 1PV sur jet de régénération réussi. Cet effet peut être amplifié par Sans-avec-Sens.", "cost" : "/"},
             {"name" : "Sans-avec-Sens", "description" : "Lisa retire son ouïe, son odorat, son touché, sa vue ou/et sa parole pour accélérer sa régénération corporelle.", "effect" : "Gain de PV de 1D2 par sens, sur jet de Mental réussi. Si 3 sens ou plus sont retirés, elle effectue un jet de régénération tous les tours même blessée", "cost" : "/"},
             {"name" : "Création de magie", "description" : "Lisa peut générer tout type de sort et incantation. Consomme plus qu'un mage classique.", "effect" : "Cout variable en fonction du sort +1 pe sauf dans les sort de l'élément eau ou en utilisant son grimoire. Lisa étant maitresse élémentaire de l'eau à la base.", "cost" : "/"},
-            {"name" : "Maitrise du temps", "description" : "Lisa maitrise la \"magie du temps\".", "effect" : "j'vais pleurer"}
+            {"name" : "Maitrise du temps (non actif)", "description" : "Lisa maitrise la \"magie du temps\".", "effect" : "j'vais pleurer"}
         ],
         "armes" : [
             {"name" : "Rapière nommé « Zulie Lame »", "description" : "Rapière ayant appartanue à la \"PDM\" régente du royaume de Lisa. On dit que cette rapière a été transmis à chaque PDM depuis 500 ans durant la cérémonie de passation de pouvoir. Que fait Lisa avec une telle relique?!", "polyvalence" : "Arme à une mains", "effect" : "1D6+1"}
         ],
         "vetements" : [
-            {"name" : "Robe enchantée d’Invocation", "description" : "Une jolie robe qui convient parfaitement à Lisa dans le quotidien mais également en combat.", "poids" : "Négligeable", "effect" : "Cette robe shonen se régénère ou se détériore en fonction de son porteur."}
+            {"name" : "Robe enchantée d’Invocation", "description" : "Une jolie robe qui convient parfaitement à Lisa dans le quotidien mais également en combat.", "poids" : "Négligeable", "effect" : "Cette robe shonen se régénère ou se détériore en fonction de son porteur."},
+            {"name" : "Sacoche en lanière de cuir", "descritption" : "Sacoche contenant un vieux Grimoire magique assez enigmatique, renfermant sûrement de nombreux sorts. Son poids est tout aussi négligeable qu'elle ne le néglige.", "poids" : "Négligeable", "effect" : "+2 bagages"}
         ],
         "bagages" : [
-            {"name" : "Grimoire dans une sacoche", "description" : "Un vieux Grimoire magique assez enigmatique, renfermant sûrement de nombreux sorts que Lisa pourrait utiliser si elle avait de la magie. Son poids est tout aussi négligeable qu'elle ne le néglige.", "quality" : 2},
+            {"name" : "Babiole bleu", "description" : "Objet énigmatique (pour Lisa) VOLÉ dans la boutique de Pruya dans la cacophonie qu'elle a crée en faisant exploser la-dite boutique", "quality" : 4},
             {"name" : "1 Flore", "description" : "Une simple pièce de la contrée originelle de Lisa. Peut servir à pile ou face.", "quality" : 2}
         ],
         "argent" : [
-            {"name" : "", "quantity" : 0}
+            {"name" : "Pièce d'or", "quantity" : 5},
+            {"name" : "Pièce d'argent", "quantity" : 500}
         ]
     },
     {
