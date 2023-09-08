@@ -299,17 +299,15 @@ footer a{
 }
 .bordure_pv{
     position: absolute;
-    width: 5%;
-    left: 30.5%;
-    top : 6.5%;
+    width: 70px;
+    top : 12.5%;
     opacity: 0.7;
 }
 
 .bordure_pe{
     position: absolute;
-    width: 5%;
-    right: 30.5%;
-    top : 6.5%;
+    width: 70px;
+    top : 12.5%;
     opacity: 0.7;
 }
 
