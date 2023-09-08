@@ -14,6 +14,8 @@ window.addEventListener("hashchange", function() {
     const metier = document.getElementsByClassName("metier")[idPerso];
     const loisir = document.getElementsByClassName("loisir")[idPerso];
     const illustration = document.getElementsByClassName("illustration")[idPerso];
+    const evaluation = document.getElementsByClassName("eval")[idPerso];
+
 
     const pv = document.getElementsByClassName("pv")[idPerso];
     const pe = document.getElementsByClassName("pe")[idPerso];
@@ -168,6 +170,8 @@ window.addEventListener("hashchange", function() {
                     const sang_froidValue = Math.floor((savoirValue + espritValue)/2) + personnage.ss_stats_bonus[17].value + personnage.ss_stats_traits[17].value;
                     const regenValue = Math.floor((constitutionValue + espritValue)/2) + personnage.ss_stats_bonus[18].value + personnage.ss_stats_traits[18].value;
                     const recupValue = Math.floor((magieValue + espritValue)/2) + personnage.ss_stats_bonus[19].value + personnage.ss_stats_traits[19].value;
+                    const evalValue = pugilatValue + armeCaCValue + precisionValue + esquiveValue + paradeValue + discretionValue + observationValue + perceptionValue + psycheValue + intimidationValue + communicationValue + autoriteValue + medecineValue + pilotageValue + artisanatValue + vitesseValue + instinctValue + sang_froidValue + regenValue + recupValue - 900;
+
                     
 
                     pugilat.textContent = pugilatValue;
@@ -190,6 +194,8 @@ window.addEventListener("hashchange", function() {
                     sang_froid.textContent = sang_froidValue;
                     regen.textContent = regenValue;
                     recup.textContent = recupValue;
+                    evaluation.textContent = evalValue;
+
 
                     contexte(personnage, 0, contextePugilat, pugilatValue)
                     contexte(personnage, 1, contextePugilat2, pugilatValue)
