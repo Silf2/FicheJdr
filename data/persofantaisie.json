@@ -132,21 +132,24 @@
             {"name" : "Tri-Lance Solaire", "description" : "Vert génère un portail à partir duquel elle peut invoquer un trident doré aux pointes enflammées.", "effect" : "Projectile de moyenne portée. Provoque une petite explosion à l'impact (1d4). Peut être utilisée au corps à corps le temps d'une attaque d'1d6+2 avant de disparaitre", "cost" : "2 PE"},
             {"name" : "Perturbation mentale", "description" : "Utilise sa magie pour perturber les pensées de sa cible, la rendant confuse et perturbant ses actions", "effect" : "Rend confus", "cost" : "2 PE"},
             {"name" : "Spiral Break", "description" : "Les mouvements de sa cible deviennent bien plus rapide", "effect" : "2 actions a la cible par tour", "cost" : "4 PE"},
+            {"name" : "Bras brumeux", "description" : "Le bras gauche de Vert à completement changé depuis l'incident de la main. Aujourd'hui, il ressemble a une grosse patte de reptile duquel de la brume s'échappe", "effect" : "Vert peu manipuler la brume qui s'en dégage, la faire changer de forme et intéragir physiquement avec certaines formes de magie", "cost" : "??????"},
             {"name" : "Lion Heart - Ancient Heart", "description" : "Les énergies d'un passé noyé dans la brume et d'un présent baignant dans les flammes sont combinées et donnent forme à une transformation dite mystique, avec une touche de danger primitif.", "effect" : "Vert lance 1d2 : Si le résultat est 1, elle se transforme en Lion Heart. Si le résultat est 2, elle se transforme en Ancient Heart", "cost" : "3PE/tour si LH, ∞PE si AH"}
         ],
         "armes" : [
-            {"name" : "Lance de Heros", "description" : "Un peu pliée, mais personne ne sait pourquoi sauf elle", "polyvalence" : "Arme à deux mains", "effect" : ""},
-            {"name" : "Dague", "description" : "Dague d'un ami solide comme un roc", "polyvalence" : "Arme à une main", "effect" : "1D4+1"}
+            {"name" : "Lance de Heros", "description" : "Le manche a été massacré par un odieux personnage, mais un gentil forgeron l'a remise en excellent état !", "polyvalence" : "Arme à deux mains", "effect" : "1D6, grande portée"},
+            {"name" : "Dague", "description" : "Dague d'un ami solide comme un roc", "polyvalence" : "Arme à une main", "effect" : "1D4"}
         ],
         "vetements" : [
-            {"name" : "Robe verte", "description" : "Robe verte", "poids" : "Négligeable", "effect" : ""},
-            {"name" : "Cape avec capuche", "description" : "Une cape achetée à Lintis qu'elle porte quasiment tout le temps","poids" : "Négligeable", "effect" : "+10 en discrétion"}
+            {"name" : "Robe Verte et Cape sombre avec capuche", "description" : "Vert tiens cette robe de son passé de princesse. Il est facile de comprendre en la voyant que la personne la portant est riche. La cape a été achetée à Lintis lors de leur première visite.", "poids" : "Négligeable", "effect" : "+10 en discretion"},
+            {"name" : "Gantelet long léger", "description" : "Un long gantelet qui lui recouvre tout le bras gauche. Il lui sert de protection, mais est surtout utile pour cacher aux yeux de tous l'était de son bras, qui suscite au mieux l'étonnement.","poids" : "Négligeable", "effect" : "1 d'armure au bras gauche"},
+            {"name" : "Sacoche en cuire", "description" : "Sacoche à bandouillère contenant le grimoire brumeux remis par Bérangère.", "poids" : "Négligeable", "effect" : "De la brume en sort..."}
         ],
         "bagages" : [
-            {"name" : "gourde", "description" : "Une gourde renfermant Sikie à l'imparfait", "quality" : 2}
+            {"name" : "4 flacons d'antidote", "description" : "Antridote permettant de guérir du poison", "quality" : 4}
         ],
         "argent" : [
-            {"name" : "Rine", "quantity" : 0}
+            {"name" : "Pièce d'or", "quantity" : 5},
+            {"name" : "Pièce d'argent", "quantity" : 500}
         ]
     },
     {
