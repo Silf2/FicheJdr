@@ -174,14 +174,13 @@ main{
   
 .modal_close {
     position: absolute;
-    top: 10px;
-    right: 9.2%;
+    right: 9%;
     color: white;
     text-decoration: none;
     z-index: 2;
     background-color: gray;
-    padding: 1px;
-    width: 15px;
+    width: 20px;
+    text-align: center;
 }
 
 footer{
