@@ -136,8 +136,8 @@
             {"name" : "Lion Heart - Ancient Heart", "description" : "Les énergies d'un passé noyé dans la brume et d'un présent baignant dans les flammes sont combinées et donnent forme à une transformation dite mystique, avec une touche de danger primitif.", "effect" : "Vert lance 1d2 : Si le résultat est 1, elle se transforme en Lion Heart. Si le résultat est 2, elle se transforme en Ancient Heart", "cost" : "3PE/tour si LH, ∞PE si AH"}
         ],
         "armes" : [
-            {"name" : "Lance de Heros", "description" : "Le manche a été massacré par un odieux personnage, mais un gentil forgeron l'a remise en excellent état !", "polyvalence" : "Arme à deux mains", "effect" : "1D6, grande portée"},
-            {"name" : "Dague", "description" : "Dague d'un ami solide comme un roc", "polyvalence" : "Arme à une main", "effect" : "1D4"}
+            {"name" : "Lance de Heros", "description" : "Le manche a été massacré par un odieux personnage, mais un gentil forgeron l'a remise en excellent état !", "polyvalence" : "Arme à deux mains", "effect" : "1D6 + 30% de chance de saignement, grande portée"},
+            {"name" : "Dague", "description" : "Dague d'un ami solide comme un roc", "polyvalence" : "Arme à une main", "effect" : "1D4 + 40% de chance de saignement"}
         ],
         "vetements" : [
             {"name" : "Robe Verte et Cape sombre avec capuche", "description" : "Vert tiens cette robe de son passé de princesse. Il est facile de comprendre en la voyant que la personne la portant est riche. La cape a été achetée à Lintis lors de leur première visite.", "poids" : "Négligeable", "effect" : "+10 en discretion"},
@@ -288,7 +288,7 @@
             {"name" : "Maitrise du temps (non actif)", "description" : "Lisa maitrise la \"magie du temps\".", "effect" : "j'vais pleurer"}
         ],
         "armes" : [
-            {"name" : "Rapière nommé « Zulie Lame »", "description" : "Rapière ayant appartanue à la \"PDM\" régente du royaume de Lisa. On dit que cette rapière a été transmis à chaque PDM depuis 500 ans durant la cérémonie de passation de pouvoir. Que fait Lisa avec une telle relique?!", "polyvalence" : "Arme à une mains", "effect" : "1D6+1"}
+            {"name" : "Rapière nommé « Zulie Lame »", "description" : "Rapière ayant appartanue à la \"PDM\" régente du royaume de Lisa. On dit que cette rapière a été transmis à chaque PDM depuis 500 ans durant la cérémonie de passation de pouvoir. Que fait Lisa avec une telle relique?!", "polyvalence" : "Arme à une mains", "effect" : "1D6 + 30% de chance de saignement"}
         ],
         "vetements" : [
             {"name" : "Robe enchantée d’Invocation", "description" : "Une jolie robe qui convient parfaitement à Lisa dans le quotidien mais également en combat.", "poids" : "Négligeable", "effect" : "Cette robe shonen se régénère ou se détériore en fonction de son porteur."},
@@ -449,7 +449,8 @@
             {"name" : "Enorme sac de voyage", "description" : "Un sac à dos contenant de nombreux ustensiles et ingrédients en tout genre, une épaisse couverture et plusieurs rations de viande séchée, de noix et de pain.", "quality" : 3}
         ],
         "argent" : [
-            {"name" : "Pièces d'argents", "quantity" : 23}
+            {"name" : "Pièce d'or", "quantity" : 7},
+            {"name" : "Pièce d'argent", "quantity" : 523}
         ]
     },
     {
@@ -467,8 +468,8 @@
             "presentation" : "Bjorn naquit dans le pays du royaume de Blork, dans une tribu guerrière dirigée par son père Bjorn de Castrarock 4éme du nom. Son enfance fut ponctuée de combats entre amis et d’entraînements aux armes où Bjorn alla jusqu’à embrocher son maître avec une lance par inadvertance lors d'un accident malencontreux à base d’énervement et d'abus de diark (alcool Orc).Mais un jour le monde de Bjorn bascula dans une ère sanglante entre les deux géants de la région qui s'affrontaient depuis des siècles. Tout débuta lors de l’attaque en traitre de l'empire elfique lors de la réunion annuelle des chefs de guerre de blork où siégeait son père. Après un combat sanglant, Bazroth l'un des chefs Orcs s'illustra par ses actions et pris le pouvoir en créant la première horde depuis 5 siècles, horde qui partit en guerre contre les elfes, durant cette guerre, Bjorn se fit connaitre lors de ses batailles et en réveillant sa rage berserk en tuant des myriades d’elfes.Cependant durant cette guerre Bjorn coupa le bras de son père, son frère aîné mourut, il se battit de toute sa fureur et de toute sa gloire. Puis après 5 ans de dures batailles, la victoire Orc fut total lors de la bataille du détroit des portes froides, où après des flots de sang versés, Bjorn tua Isendill un général elfique après un duel à la hache et à l’épée épique.Durant cette période de sa vie, Bjorn apprit la maîtrise de son état de berserk puis il partit voyager, suite à la mort de son père, dans le monde laissant Castrarock aux mainset son frère cadet qui était meilleur au jeu de la politique et de la gestion. Il fonda alors Les Frères de Hache, une guilde de mercenaires qui prospéra quelques temps et y vécu moult aventures, puis suite à une guerre qui détruisit le pays et sa guilde au passage, il partit vers d'autres aventures avec les guerriers qui le suivit vers l'horizon."
         },
         "illustration" : "../images/fantaisie/pp/Bjorn.jpg",
-        "pv" : 27,
-        "pe" : 5,
+        "pv" : 24,
+        "pe" : 8,
         "gds_stats" : [
             { "name" : "Constitution", "value" : 70},
             { "name" : "Agilité", "value" : 60},
@@ -492,7 +493,7 @@
             { "name" : "pugilat", "value" : 4},
             { "name" : "arme_cac", "value" : 17},
             { "name" : "precision", "value" : 15},
-            { "name" : "esquive", "value" : 5},
+            { "name" : "esquive", "value" : 15},
             { "name" : "parade", "value" : 5},
             { "name" : "discretion", "value" : -36},
             { "name" : "observation", "value" : 1},
@@ -502,8 +503,8 @@
             { "name" : "communication", "value" : -3},
             { "name" : "autorite", "value" : 11},
             { "name" : "medecine", "value" : -10},
-            { "name" : "pilotage", "value" : -4},
-            { "name" : "artisanat", "value" : -4},
+            { "name" : "pilotage", "value" : -19},
+            { "name" : "artisanat", "value" : 1},
             { "name" : "vitesse", "value" : 0},
             { "name" : "instinct", "value" : 5},
             { "name" : "sang_froid", "value" : 10},
@@ -539,11 +540,11 @@
             { "name" : "arme_cac2", "value" : -10, "si" : "à la lance"},
             { "name" : "precision", "value" : 0},
             { "name" : "precision2", "value" : 0},
-            { "name" : "esquive", "value" : 0},
+            { "name" : "esquive", "value" : -10, "si" : "porte son armure lourde"},
             { "name" : "esquive2", "value" : 0},
-            { "name" : "parade", "value" : 10, "si" : "utilise son bouclier"},
+            { "name" : "parade", "value" : 0},
             { "name" : "parade2", "value" : 0},
-            { "name" : "discretion", "value" : 0},
+            { "name" : "discretion", "value" : -25, "si" : "porte son armure lourde"},
             { "name" : "discretion2", "value" : 0},
             { "name" : "observation", "value" : 0},
             { "name" : "observation2", "value" : 0},
@@ -563,7 +564,7 @@
             { "name" : "pilotage2", "value" : 0},
             { "name" : "artisanat", "value" : 0},
             { "name" : "artisanat2", "value" : 0},
-            { "name" : "vitesse", "value" : 0},
+            { "name" : "vitesse", "value" : -25, "si" : "porte son armure lourde"},
             { "name" : "vitesse2", "value" : 0},
             { "name" : "instinct", "value" : 0},
             { "name" : "instinct2", "value" : 0},
@@ -587,20 +588,26 @@
             {"name" : "Cri de guerre", "description" : "Björn rallie ses troupes et leur donne une partie de sa rage de vaincre.", "effect" : "- Si Björn est au dessus de 50% de ses pv, le cri donne un bonus général de +5 à ses alliés pendant 2 tours. - Si Björn est en dessous de 50%; le cri donne un bonus général de +10 à ses alliés pendant 2 tours et un bonus général de +5 à lui même pendant 1 tour.", "cost" : "1 PE"}
         ],
         "armes" : [
-            {"name" : "Cimeterre ", "description" : "Une épée à lame courte récuperée à Lintis", "polyvalence" : "Arme à une main", "effect" : "1D6+1+3 aux dps sous une réussite sous 20"},
-            {"name" : "2 couteaux de lancé", "description" : "Couteaux lui servant aussi bien pour tailler du bois ou égorger quelqu'un. Un des trois qu'il possédait a été donné à Emma avant qu'elle parte.", "polyvalence" : "Arme à une main", "effect" : "1D4+1"}
+            {"name" : "Hache à double tranchant ", "description" : "une hache venant de la pire ville du monde", "polyvalence" : "Arme à une main", "effect" : "1D6 + 30% de chance de saignement"},
+            {"name" : "Arbalète lourde de Talus avec carquois", "description" : "arbaléte de la garde de Talus avec un carquois de 8 carreaux", "polyvalence" : "Arme à deux main", "effect" : "1d6 + carreaux, -10 en précision, perce l’armure et 1 tour de rechargement."},
+            {"name" : "Bouclier d'orichalque rond", "description" : "Son fidèle ami qui lui a sauvé la vie de nombreuses fois", "polyvalence" : "Arme à une main", "effect" : " Bouclier léger : +10 en parade, -5 en vitesse"}
         ],
         "vetements" : [
             {"name" : "Tunique orc avec une cape et collier", "description" : "Tunique ayant été rapiécée de nombreuses fois car se fait souvent déchirer lors des combats. Björn porte également toujours un collier, symbole de son lien avec sa famille en lui permettant de parler à son frére.", "poids" : "Négligeable", "effect" : "Collier permettant de parlé à son frère"},
-            {"name" : "Mi-Armure lourde en plaque", "description" : "Mélange massif de deux armures différentes permettant de protéger Björn au mieux, le haut de l'armure a été perdu … (le haut est partie en même temps que Nylathria)","poids" : "Moyen", "effect" : "4 d'armure sauf sur le torse"},
-            {"name" : "Bouclier d’orichalque rond", "description" : "Son fidèle ami qui lui a sauvé la vie de nombreuses fois", "poids" : "Léger", "effect" : " +10 en parade"}
+            {"name" : "Armure lourde en plaque", "description" : "Une armure provenant de Talus, à cause d'un combat avec un gryffon, le torse est détruit.","poids" : "Lourde", "effect" : "4 d'armure sauf sur le torse"},
+            {"name" : "Ceinture pour couteaux", "description" : "Une ceinture de 3 emplacements contenant deux couteux de lancé", "poids" : "Léger", "effect" : "Les couteaux font 1D4 de dégat"}
         ],
         "bagages" : [
-            {"name" : "crâne de zombie", "description" : "souvenir d'une vieille aventure, il est maintenant assez blanc et lisse pour jouer à la balle avec.", "quality" : 2},
-            {"name" : "gemme mystérieuse", "description" : "C'est non."}
+            {"name" : "Crâne de zombie", "description" : "souvenir d'une vieille aventure, il est maintenant assez blanc et lisse pour jouer à la balle avec.", "quality" : 2},
+            {"name" : "Épée de garde volée à Tanus", "description" : "une épée nulle ayant été empruntée sur le corps d'une garde de Talus", "quality" : 3},
+            {"name" : "Sac de jute pour le bordel", "description" : "Sac lui servant a y mettre son bordel: pierre à aiguiser, fiole de parasites, fragment d'os, souvenir de la gemme qu'Aegon lui a volé, journal intime, amour brisé.", "quality" : 3],
+            {"name" : "Hache d'orc d'orichalque brisée", "description" : "Vous appelez ça une hache ? Je ne vois qu'un manche !", "quality" : 1},
+            {"name" : "Épée courbée", "description" : "épée courbée qu'il a récupéré quelque part, personne ne sait ou. (1d6+3 aux dps sous une réussite sous 20, +30% de chance de saingement)", "quality" : 2},
+            {"name" : "Livre sur les créatures marines", "description" : "Bjorn se sent pousser une envie d'étudier le monstre marin ayant attaqué Agalab. N'oubliez jamais, oui, c'est surprenant, mais il est lettré... plus ou moins...", "quality" : 3}
         ],
         "argent" : [
-            {"name" : ":)", "quantity" : 0}
+            {"name" : "Pièce d'or", "quantity" : 7},
+            {"name" : "Pièce d'argent", "quantity" : 500}
         ]
     },
     {
@@ -690,11 +697,11 @@
             { "name" : "ccac2", "value" : -5, "si" : "arme courte"},
             { "name" : "cprecision", "value" : 10, "si" : "cible mouvante"},
             { "name" : "cprecision2", "value" : 0},
-            { "name" : "cesquive", "value" : 0},
+            { "name" : "cesquive", "value" : -10; "si" : "porte son armure lourde"},
             { "name" : "cesquive2", "value" : 0},
             { "name" : "cparade", "value" : 0},
             { "name" : "cparade2", "value" : 0},
-            { "name" : "cdiscretion", "value" : 0},
+            { "name" : "cdiscretion", "value" : -25, "si" : "porte son armure lourde"},
             { "name" : "cdiscretion2", "value" : 0},
             { "name" : "cobservation", "value" : 0},
             { "name" : "cobservation2", "value" : 0},
@@ -714,7 +721,7 @@
             { "name" : "cpilotage2", "value" : 0},
             { "name" : "cartisanat", "value" : 0},
             { "name" : "cartisanat2", "value" : 0},
-            { "name" : "cvitesse", "value" : 0},
+            { "name" : "cvitesse", "value" : -25, "si" : "porte son armure lourde"},
             { "name" : "cvitesse2", "value" : 0},
             { "name" : "cinstinct", "value" : 0},
             { "name" : "cinstinct2", "value" : 0},
@@ -736,8 +743,8 @@
             {"name" : "STRIKE !!!!!", "description" : "Prenant de l’élan, Gregor charge un groupe d’adversaire pour les faire chuter !", "effect" : "Applique l’effet étourdi aux adversaires", "cost" : "2 PE"}
         ],
         "armes" : [
-            {"name" : "Grand marteau d’armes", "description" : "Un long marteau à conçu pour être manié par les plus forts, mieux vaut ne pas être sa cible…", "polyvalence" : "Arme à deux mains", "effect" : "1D8"},
-            {"name" : "Dague courte", "description" : "Un simple poignard, mais qui peut s’avérer utile", "polyvalence" : "Arme à une main", "effect" : "1D4"}
+            {"name" : "Grand marteau d’armes", "description" : "Un long marteau à conçu pour être manié par les plus forts, mieux vaut ne pas être sa cible…", "polyvalence" : "Arme à deux mains", "effect" : "1D8 + 20% de chance d'infliger Sonné"},
+            {"name" : "Dague courte", "description" : "Un simple poignard, mais qui peut s’avérer utile", "polyvalence" : "Arme à une main", "effect" : "1D4 + 40% de chance de saignement"}
         ],
         "vetements" : [
             {"name" : "Tenue civile modeste", "description" : "Des habits de couleur gris sombre portés par Gregor sous son armure", "poids" : "Négligeable", "effect" : ""},
@@ -746,6 +753,8 @@
         "bagages" : [
         ],
         "argent" : [
+            {"name" : "Pièce d'or", "quantity" : 7},
+            {"name" : "Pièce d'argent", "quantity" : 500}
         ]
     },
     {
