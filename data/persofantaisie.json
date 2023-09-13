@@ -600,7 +600,7 @@
         "bagages" : [
             {"name" : "Crâne de zombie", "description" : "souvenir d'une vieille aventure, il est maintenant assez blanc et lisse pour jouer à la balle avec.", "quality" : 2},
             {"name" : "Épée de garde volée à Tanus", "description" : "une épée nulle ayant été empruntée sur le corps d'une garde de Talus", "quality" : 3},
-            {"name" : "Sac de jute pour le bordel", "description" : "Sac lui servant a y mettre son bordel: pierre à aiguiser, fiole de parasites, fragment d'os, souvenir de la gemme qu'Aegon lui a volé, journal intime, amour brisé.", "quality" : 3],
+            {"name" : "Sac de jute pour le bordel", "description" : "Sac lui servant a y mettre son bordel: pierre à aiguiser, fiole de parasites, fragment d'os, souvenir de la gemme qu'Aegon lui a volé, journal intime, amour brisé.", "quality" : 3},
             {"name" : "Hache d'orc d'orichalque brisée", "description" : "Vous appelez ça une hache ? Je ne vois qu'un manche !", "quality" : 1},
             {"name" : "Épée courbée", "description" : "épée courbée qu'il a récupéré quelque part, personne ne sait ou. (1d6+3 aux dps sous une réussite sous 20, +30% de chance de saingement)", "quality" : 2},
             {"name" : "Livre sur les créatures marines", "description" : "Bjorn se sent pousser une envie d'étudier le monstre marin ayant attaqué Agalab. N'oubliez jamais, oui, c'est surprenant, mais il est lettré... plus ou moins...", "quality" : 3}
@@ -697,7 +697,7 @@
             { "name" : "ccac2", "value" : -5, "si" : "arme courte"},
             { "name" : "cprecision", "value" : 10, "si" : "cible mouvante"},
             { "name" : "cprecision2", "value" : 0},
-            { "name" : "cesquive", "value" : -10; "si" : "porte son armure lourde"},
+            { "name" : "cesquive", "value" : -10, "si" : "porte son armure lourde"},
             { "name" : "cesquive2", "value" : 0},
             { "name" : "cparade", "value" : 0},
             { "name" : "cparade2", "value" : 0},
