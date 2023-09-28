@@ -148,7 +148,7 @@
             {"name" : "4 flacons d'antidote", "description" : "Antridote permettant de guérir du poison", "quality" : 4}
         ],
         "argent" : [
-            {"name" : "Pièce d'or", "quantity" : 5},
+            {"name" : "Pièce d'or", "quantity" : 0},
             {"name" : "Pièce d'argent", "quantity" : 500}
         ]
     },
