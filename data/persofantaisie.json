@@ -325,7 +325,7 @@
             { "name" : "Agilité", "value" : 25},
             { "name" : "Mental", "value" : 51},
             { "name" : "Magie", "value" : 66},
-            { "name" : "Charisme", "value" : 55},
+            { "name" : "Charisme", "value" : 60},
             { "name" : "Savoir", "value" : 70}
         ],
         "maitrise_bonus" : [
