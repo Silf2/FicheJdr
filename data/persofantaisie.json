@@ -996,7 +996,7 @@
             { "name" : "cprecision2", "value" : 0},
             { "name" : "cesquive", "value" : 0},
             { "name" : "cesquive2", "value" : 0},
-            { "name" : "cparade", "value" : 0},
+            { "name" : "cparade", "value" : 10, "si" : "à la rapière"},
             { "name" : "cparade2", "value" : 0},
             { "name" : "cdiscretion", "value" :  -5, "si" : "porte son plastron de cuir"},
             { "name" : "cdiscretion2", "value" : 0},
