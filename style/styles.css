@@ -51,6 +51,11 @@
     color: rgb(225, 161,161);
 }
 
+#Noir6 span, #Noir6 td{
+    font-family: 'Dancing Script';
+    color: rgb(0, 0,0);
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -70,12 +75,13 @@ header{
 
 main{
     background-color: #f0e3c0;
-    padding: 5%;
+    padding: 5% 5% 3% 5%;
 }
 
 #conteneur_fiches{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .fiche{
@@ -84,15 +90,17 @@ main{
     flex-direction: column;
     background: #898989;
     border-radius: 15px;
-    width: 15%;
+    width: 250px;
     height: 600px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 2%;
 }
 
 .perso{
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    height: 580px;
+    height: 100%;
+    max-width: 100%;
     filter: grayscale(1);
     transition: .3s;
 }
@@ -305,18 +313,10 @@ footer a{
     margin-bottom: 1%;
 }
 
-.bordure_pv{
-    position: absolute;
+.bordure_pv, .bordure_pe{
     width: 70px;
-    top : 12.5%;
     opacity: 0.7;
-}
-
-.bordure_pe{
-    position: absolute;
-    width: 70px;
-    top : 12.5%;
-    opacity: 0.7;
+    margin-top: -70%;
 }
 
 .info_right, .info_left{
