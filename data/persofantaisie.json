@@ -961,7 +961,7 @@
             { "name" : "artisanat", "value" : 14},
             { "name" : "vitesse", "value" : 0},
             { "name" : "instinct", "value" : 3},
-            { "name" : "sang_froid", "value" :15},
+            { "name" : "sang_froid", "value" :-15},
             { "name" : "regen_pv", "value" : 15},
             { "name" : "recup_pe", "value" : 0}
         ],
@@ -990,7 +990,7 @@
         "contexte" : [
             { "name" : "cpugilat", "value" : 0},
             { "name" : "cpugilat2", "value" : 0},
-            { "name" : "ccac", "value" : 0},
+            { "name" : "ccac", "value" : 10, "si" : "à la rapière"},
             { "name" : "ccac2", "value" : 0},
             { "name" : "cprecision", "value" : 0},
             { "name" : "cprecision2", "value" : 0},
@@ -998,7 +998,7 @@
             { "name" : "cesquive2", "value" : 0},
             { "name" : "cparade", "value" : 0},
             { "name" : "cparade2", "value" : 0},
-            { "name" : "cdiscretion", "value" : 0},
+            { "name" : "cdiscretion", "value" :  -5, "si" : "porte son plastron de cuir"},
             { "name" : "cdiscretion2", "value" : 0},
             { "name" : "cobservation", "value" : 0},
             { "name" : "cobservation2", "value" : 0},
@@ -1008,18 +1008,18 @@
             { "name" : "cpsyche2", "value" : 0},
             { "name" : "cintimidation", "value" : 0},
             { "name" : "cintimidation2", "value" : 0},
-            { "name" : "ccommunication", "value" : 0},
+            { "name" : "ccommunication", "value" : 15, "si" : "en train de mentir"},
             { "name" : "ccommunication2", "value" : 0},
-            { "name" : "cautorite", "value" : 0},
+            { "name" : "cautorite", "value" : 10, "si" : "en train de mentir"},
             { "name" : "cautorite2", "value" : 0},
             { "name" : "cmedecine", "value" : 0},
             { "name" : "cmedecine2", "value" : 0},
             { "name" : "cpilotage", "value" : 0},
             { "name" : "cpilotage2", "value" : 0},
-            { "name" : "cartisanat", "value" : 0},
+            { "name" : "cartisanat", "value" : 20, "si" : "en couture"},
             { "name" : "cartisanat2", "value" : 0},
-            { "name" : "cvitesse", "value" : 0},
-            { "name" : "cvitesse2", "value" : 0},
+            { "name" : "cvitesse", "value" : 5, "si" : "à la rapière"},
+            { "name" : "cvitesse2", "value" : -5, "si" : "porte son plastron de cuir"},
             { "name" : "cinstinct", "value" : 0},
             { "name" : "cinstinct2", "value" : 0},
             { "name" : "csang-froid", "value" : 0},
@@ -1042,10 +1042,11 @@
             {"name" : "Black heart", "description" : "A la différence de Vert, cette transformation n'augmente pas ses capacités physiques. Cependant, elle peut librement voler et est tout de même plus rapide.", "effect" : "+10 Vitesse, peut voler librement", "cost" : "2PE/tour"}
         ],
         "armes" : [
-            {"name" : "Rapière", "description" : "Une rapière transmise dans sa famille qu'elle chérit énormément.", "polyvalence" : "Arme à une main", "effect" : "1D6"}
+            {"name" : "Rapière", "description" : "Une rapière transmise dans sa famille qu'elle chérit énormément.", "polyvalence" : "Arme à une main", "effect" : "1D6 + 30% de chance de saignement"}
         ],
         "vetements" : [
-            {"name" : "Robe courte", "description" : "Une robe noire plus courte que celle de Vert, qui montre aussi son appartenance à la haute sociétée", "poids" : "Négligeable", "effect" : "Aucun"}
+            {"name" : "Robe courte", "description" : "Une robe noire plus courte que celle de Vert, qui montre aussi son appartenance à la haute sociétée", "poids" : "Négligeable", "effect" : "Aucun"},
+            {"name" : "Plastron de cuir", "description" : "Un léger plastron de cuir qu'elle porte sous sa robe, un compagnon qui lui a déjà sauvé la vie", "poids" : "Léger", "effect" : "2 de résistance au torse"}
         ],
         "bagages" : [
             {"name" : "Nécéssaire de couture", "description" : "Noire ne l'oublie jamais, très utile pour rafistoler des vêtements", "quality" : 4}
