@@ -906,6 +906,153 @@
         ],
         "argent" : [
         ]
+    },
+        {
+        "info" : {
+            "prenom": "Noir",
+            "nom": "De Valois",
+            "age": 20,
+            "sexe": "Femme",
+            "taille": "1m58",
+            "poids": 47,
+            "race": "Humaine",
+            "classe": "Épéiste",
+            "metier": "Princesse",
+            "loisir": "Le théatre",
+            "presentation" : "Vert est l'ainée d'une famille royale, Elle était destinée à obtenir le trône, mais son manque d'attention et de discipline quant aux devoirs d'une futur reine ont poussé ses parents à faire de sa petite sœur l'héritière, au grand bonheur des deux.  Au sein de sa famille, elle s'entend très bien avec ses deux soeurs, Noire et Blanc. Elle s'est beaucoup occupée d'elles étant la grande soeur, mais, une fois Noire en âge de prendre le relais, elle a fini par souvent s'éclipser du château, allant visitant ce qu'elle désirait, quand elle voulait, et rentrant quand bon lui semblait. Elle est donc une aventurière chevronnée, sans oublier une très bonne lancière, qui parcourt le monde sans objectif particulier, a part découvrir de nouvelles choses. Les raisons derrière sa transformation sont inconnus de tout le monde, elle comprit. Elle a toujours pus le faire, et le maîtrise assez bien. Il semblerait tout de même que sa mère détiennent les clés de ce mystère."
+        },
+        "illustration" : "../images/fantaisie/pp/Noir.png",
+        "pv" : 17,
+        "pe" : 13,
+        "gds_stats" : [
+            { "name" : "Constitution", "value" : 50},
+            { "name" : "Agilité", "value" : 65},
+            { "name" : "Mental", "value" : 35},
+            { "name" : "Magie", "value" : 40},
+            { "name" : "Charisme", "value" : 60},
+            { "name" : "Savoir", "value" : 50}
+        ],
+        "maitrise_bonus" : [
+            { "name" : "corps", "value" : 0},
+            { "name" : "esprit", "value" : 0},
+            { "name" : "social", "value" : 0}
+        ],
+        "resistance_bonus" : [
+            { "name" : "resistance_physique", "value" : 0},
+            { "name" : "bonus_physique", "value" : 0},
+            { "name" : "resistance_magique", "value" : 0},
+            { "name" : "bonus_magique", "value" : 0}
+        ],
+        "ss_stats_bonus" : [
+            { "name" : "pugilat", "value" : -27},
+            { "name" : "arme_cac", "value" : 21},
+            { "name" : "precision", "value" : -22},
+            { "name" : "esquive", "value" : 18},
+            { "name" : "parade", "value" : 14},
+            { "name" : "discretion", "value" : -7},
+            { "name" : "observation", "value" : 15},
+            { "name" : "perception", "value" : 15},
+            { "name" : "psyche", "value" : -8},
+            { "name" : "intimidation", "value" : -35},
+            { "name" : "communication", "value" : 12},
+            { "name" : "autorite", "value" : 1},
+            { "name" : "medecine", "value" : -25},
+            { "name" : "pilotage", "value" : 11},
+            { "name" : "artisanat", "value" : 14},
+            { "name" : "vitesse", "value" : 0},
+            { "name" : "instinct", "value" : 3},
+            { "name" : "sang_froid", "value" :15},
+            { "name" : "regen_pv", "value" : 15},
+            { "name" : "recup_pe", "value" : 0}
+        ],
+        "ss_stats_traits" : [
+            { "name" : "pugilat", "value" : 0},
+            { "name" : "arme_cac", "value" : 0},
+            { "name" : "precision", "value" : 0},
+            { "name" : "esquive", "value" : 0},
+            { "name" : "parade", "value" : 0},
+            { "name" : "discretion", "value" : 0},
+            { "name" : "observation", "value" : 0},
+            { "name" : "perception", "value" : 0},
+            { "name" : "psyche", "value" : 0},
+            { "name" : "intimidation", "value" : 0},
+            { "name" : "communication", "value" : 0},
+            { "name" : "autorite", "value" : 0},
+            { "name" : "medecine", "value" : 0},
+            { "name" : "pilotage", "value" : 0},
+            { "name" : "artisanat", "value" : 0},
+            { "name" : "vitesse", "value" : 0},
+            { "name" : "instinct", "value" : 0},
+            { "name" : "sang_froid", "value" : 0},
+            { "name" : "regen_pv", "value" : 0},
+            { "name" : "recup_pe", "value" : 0}
+        ],
+        "contexte" : [
+            { "name" : "cpugilat", "value" : 0},
+            { "name" : "cpugilat2", "value" : 0},
+            { "name" : "ccac", "value" : 0},
+            { "name" : "ccac2", "value" : 0},
+            { "name" : "cprecision", "value" : 0},
+            { "name" : "cprecision2", "value" : 0},
+            { "name" : "cesquive", "value" : 0},
+            { "name" : "cesquive2", "value" : 0},
+            { "name" : "cparade", "value" : 0},
+            { "name" : "cparade2", "value" : 0},
+            { "name" : "cdiscretion", "value" : 0},
+            { "name" : "cdiscretion2", "value" : 0},
+            { "name" : "cobservation", "value" : 0},
+            { "name" : "cobservation2", "value" : 0},
+            { "name" : "cperception", "value" : 0},
+            { "name" : "cperception2", "value" : 0},
+            { "name" : "cpsyche", "value" : 0},
+            { "name" : "cpsyche2", "value" : 0},
+            { "name" : "cintimidation", "value" : 0},
+            { "name" : "cintimidation2", "value" : 0},
+            { "name" : "ccommunication", "value" : 0},
+            { "name" : "ccommunication2", "value" : 0},
+            { "name" : "cautorite", "value" : 0},
+            { "name" : "cautorite2", "value" : 0},
+            { "name" : "cmedecine", "value" : 0},
+            { "name" : "cmedecine2", "value" : 0},
+            { "name" : "cpilotage", "value" : 0},
+            { "name" : "cpilotage2", "value" : 0},
+            { "name" : "cartisanat", "value" : 0},
+            { "name" : "cartisanat2", "value" : 0},
+            { "name" : "cvitesse", "value" : 0},
+            { "name" : "cvitesse2", "value" : 0},
+            { "name" : "cinstinct", "value" : 0},
+            { "name" : "cinstinct2", "value" : 0},
+            { "name" : "csang-froid", "value" : 0},
+            { "name" : "csang-froid2", "value" : 0},
+            { "name" : "cregen", "value" : 0},
+            { "name" : "cregen2", "value" : 0},
+            { "name" : "crecup", "value" : 0},
+            { "name" : "crecup2", "value" : 0}
+        ],
+        "trait" : [
+            { "name" : "Virtuose à la rapière", "description" : "Comme ses deux sœurs, Noire à dut apprendre le maniement d'arme très jeune. Bien que ce fût plus complexe pour les deux autres, Noire a directement eu le coup de foudre pour la rapière.", "effect" : "+10 CAC et parade a la rapière, +5 vitesse"},
+            { "name" : "Couturière", "description" : "Les costumes ont toujours captivés Noire, ce qui lui a fait apprendre la couture. Au début, elle avait plus de succès a se percer les doigts, mais après nombres efforts, la voila talentueuse  ", "effect" : "+20 en couture"},
+            { "name" : "Actrice", "description" : "Noire est passionée de théatre, a tel point qu'elle s'entraine souvent a réciter des textes devant son miroir. Et il faut croire qu'elle est vraiment douée la dedans, c'est une actrice hors paire !", "effect" : "+15 Communication, +10 Autorité si elle doit mentir"},
+            { "name" : "Visage connue", "description" : "Etant l'héritière et la futur reine de son royaume, il y a de grandes chances que sont visage ait déjà été vus par n'importe qui. Après, pour ce qu'ils pensent d'elle, c'est autre chose…", "effect" : "1/2 chance que n'importe quel personnage connaisse Noire"}  
+            ],
+        "competence" : [
+            {"name" : "Epée des tornades", "description" : "Noire tranche l'air devant elle, ce qui projette un rayon en direction de sa cible de la forme de sont entaille", "effect" : "1D6", "cost" : "2 PE"},
+            {"name" : "Dash ", "description" : "Noire se projette rapidement en direction de sa cible, rapière la première, pour se retrouver au corps a corps en un instinct", "effect" : "1D6", "cost" : "2 PE"},
+            {"name" : "Lame infinie", "description" : "Noire enchaine a la vitesse de la lumière trois coups de rapières", "effect" : "3D(6+1)", "cost" : "5 PE"},
+            {"name" : "Black heart", "description" : "A la différence de Vert, cette transformation n'augmente pas ses capacités physiques. Cependant, elle peut librement voler et est tout de même plus rapide.", "effect" : "+10 Vitesse, peut voler librement", "cost" : "2PE/tour"}
+        ],
+        "armes" : [
+            {"name" : "Rapière", "description" : "Une rapière transmise dans sa famille qu'elle chérit énormément.", "polyvalence" : "Arme à une main", "effect" : "1D6"}
+        ],
+        "vetements" : [
+            {"name" : "Robe courte", "description" : "Une robe noire plus courte que celle de Vert, qui montre aussi son appartenance à la haute sociétée", "poids" : "Négligeable", "effect" : "Aucun"}
+        ],
+        "bagages" : [
+            {"name" : "Nécéssaire de couture", "description" : "Noire ne l'oublie jamais, très utile pour rafistoler des vêtements", "quality" : 4}
+        ],
+        "argent" : [
+            {"name" : "Pièce d'or", "quantity" : 5},
+            {"name" : "Pièce d'argent", "quantity" : 500}
+        ]
     }
-
 ]
