@@ -394,7 +394,7 @@
             { "name" : "esquive2", "value" : 0},
             { "name" : "parade", "value" : 0},
             { "name" : "parade2", "value" : 0},
-            { "name" : "discretion", "value" : 10, "si :" "porte sa tunique de druide"},
+            { "name" : "discretion", "value" : 10, "si" : "porte sa tunique de druide"},
             { "name" : "discretion2", "value" : 0},
             { "name" : "observation", "value" : 0},
             { "name" : "observation2", "value" : 0},
