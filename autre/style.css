@@ -1,0 +1,139 @@
+*
+{
+    font-family: raleway;
+    font-weight: bolder;
+    color: white;
+}
+
+body
+{
+    background-image: url(image/Persona.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+article{
+    background-color: #0c0b0ba1;
+    border-radius: 15px;
+    width: 95%;
+    margin: auto;
+}
+#titre
+{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+p
+{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+#sous-titre
+{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.liste
+{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.p5
+{
+    width: 800px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.amazon
+{
+    width:50px;
+    height: auto;
+}
+.jeu
+{
+    column-width: 500px;
+    text-align: center;
+    background-color: #ffd7006b;
+    border-radius: 15px;
+}
+
+.switch {
+    position: relative;
+}
+.switch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(image/switch.png);
+    background-size: 100%;
+    width: 85%;
+    margin-left: 7.5%;
+    filter: contrast(1);
+    border-radius: 15px;
+    z-index: -1; 
+}
+
+.playstation {
+    position: relative;
+}
+.playstation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(image/ps.png);
+    background-size: 100%;
+    width: 115%;
+    margin-left: -5%;
+    opacity: 1;
+    border-radius: 15px;
+    z-index: -1; 
+}
+
+.bouquin
+{
+    column-width: 500px;
+    width: 739px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.prix
+{
+    font-size: 20px;
+}
+
+.manga
+{
+    width: 361px;
+    height: 500px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.amazon
+{
+    border-radius: 15px;
+}
+
+.ligneTableau{
+    padding-bottom: 2%;
+    display: block;
+}
+
+.titre{
+    font-size: 30px;
+}
