@@ -318,8 +318,8 @@
             "presentation" : "Brahâm à vu le jour sur une route, a proximité d'un panneau d'orientation et d'un peuplier, entre les jambes d'une pauverette naine qui ignorait sans doute que la caravane marchande dont elle faisait partie allais être attaquer une semaine plus tard par un groupe de sélérat, plus pauvres et affamés que cruelles et sanginaires, mais suffisement déterminé pour ne laisser derierre eux que des restes de marchandises et des cadavres ensanglanter. Brahâm en réchappa, par miracle ou parce qu'il est plus difficille de tué un nourisson qu'il n'y parrait, et fut receuilli par un druide qui découvri le massacre au hasard d'une ceuillette deux jours plus tard. Mise a part ce facheux incident, l'enfance de notre ami nain (car c'est un ami, n'en douté pas) se déroula plutot paisiblement au fin fond d'une foret, ou il suivi les enseignement de son sauveur quand aux \"miracles\" dont est capable la nature. Arriver à l'age adulte, l'envie de vivre parmi les siens se montra plus forte que son amour des milieux boisé et il pris la route pour rejoindre une colonie naine. "
         },
         "illustration" : "../images/fantaisie/pp/toad.jpg",
-        "pv" : 13,
-        "pe" : 16,
+        "pv" : 14,
+        "pe" : 20,
         "gds_stats" : [
             { "name" : "Constitution", "value" : 33},
             { "name" : "Agilité", "value" : 25},
