@@ -403,6 +403,13 @@ main{
     padding-top: 8px;
 }
 
+.specialisation{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 7%;
+}
+
 .contexte{
     display: flex;
     flex-direction: column;
