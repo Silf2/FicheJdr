@@ -167,8 +167,8 @@
             "presentation" : "Une fausse excuse de pourquoi j'ai plus de magie … Est-ce que le « je suis une sorte de fantôme venu d'un autre monde » ça peut passer ou je suis grillée ? ou alors y a un démon qui a... nan c’est trop nul le voleur de magie… j'ai trouvé !« Bonjour je m'appelle Jess... Jessica... heu non Lisa ! Je suis morte et ne fait donc plus partie de ce monde mais je ne suis pas mort quand je me suis fait tuer. Je suis un mage mais mon corps ne réagit plus à la magie donc je ne peux plus faire de sort mais par contre je peux voir les flux de magie et reconnaitre les types de mage et quel sort est lancer lors de son incantation »"
         },
         "illustration" : "../images/fantaisie/pp/Lisa.png",
-        "pv" : 14,
-        "pe" : 16,
+        "pv" : 15,
+        "pe" : 20,
         "gds_stats" : [
             { "name" : "Constitution", "value" : 40},
             { "name" : "Agilité", "value" : 50},
@@ -469,8 +469,8 @@
             "presentation" : "Bjorn naquit dans le pays du royaume de Blork, dans une tribu guerrière dirigée par son père Bjorn de Castrarock 4éme du nom. Son enfance fut ponctuée de combats entre amis et d’entraînements aux armes où Bjorn alla jusqu’à embrocher son maître avec une lance par inadvertance lors d'un accident malencontreux à base d’énervement et d'abus de diark (alcool Orc).Mais un jour le monde de Bjorn bascula dans une ère sanglante entre les deux géants de la région qui s'affrontaient depuis des siècles. Tout débuta lors de l’attaque en traitre de l'empire elfique lors de la réunion annuelle des chefs de guerre de blork où siégeait son père. Après un combat sanglant, Bazroth l'un des chefs Orcs s'illustra par ses actions et pris le pouvoir en créant la première horde depuis 5 siècles, horde qui partit en guerre contre les elfes, durant cette guerre, Bjorn se fit connaitre lors de ses batailles et en réveillant sa rage berserk en tuant des myriades d’elfes.Cependant durant cette guerre Bjorn coupa le bras de son père, son frère aîné mourut, il se battit de toute sa fureur et de toute sa gloire. Puis après 5 ans de dures batailles, la victoire Orc fut total lors de la bataille du détroit des portes froides, où après des flots de sang versés, Bjorn tua Isendill un général elfique après un duel à la hache et à l’épée épique.Durant cette période de sa vie, Bjorn apprit la maîtrise de son état de berserk puis il partit voyager, suite à la mort de son père, dans le monde laissant Castrarock aux mainset son frère cadet qui était meilleur au jeu de la politique et de la gestion. Il fonda alors Les Frères de Hache, une guilde de mercenaires qui prospéra quelques temps et y vécu moult aventures, puis suite à une guerre qui détruisit le pays et sa guilde au passage, il partit vers d'autres aventures avec les guerriers qui le suivit vers l'horizon."
         },
         "illustration" : "../images/fantaisie/pp/Bjorn.jpg",
-        "pv" : 24,
-        "pe" : 8,
+        "pv" : 27,
+        "pe" : 10,
         "gds_stats" : [
             { "name" : "Constitution", "value" : 70},
             { "name" : "Agilité", "value" : 60},
